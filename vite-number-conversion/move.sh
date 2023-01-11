@@ -1,3 +1,3 @@
-# rm -r ../docs
+rm -r ../assets
 
 mv dist/* ../
