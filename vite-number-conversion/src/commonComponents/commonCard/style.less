@@ -1,0 +1,17 @@
+.commonCard{
+  width: 96vw;
+  margin: 20px;
+  border: solid 2px #aaa;
+  border-radius: 5px;
+  .title{
+    font-size: 24px;
+    margin: 10px 20px;
+    font-weight: bold;
+  }
+  .content{
+      display: grid; //这里为什么不用flex呢，因为如果使用flex，最后一行的justify-content没法和前面保持一致
+      grid-template-columns: repeat(auto-fill,300px);
+      justify-content: space-around;
+  }
+  
+}

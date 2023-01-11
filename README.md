@@ -1,10 +1,12 @@
 # Alyosha
 个人主站
 
-npm vite react ts 
-arco-design
 
 
-## 发布到githubPages 注意事项
-js 和 css 404
-整个页面不可见：vite.config.ts 中加入   base:"/Alyosha/"
+
+## 开发日志
+### 2023.1.11
+  build: 构建项目，使用npm vite react ts arco-design
+  fix: js和css404，解决方案：vite.config.ts 中加入   base:"/Alyosha/"
+
+
