@@ -1,3 +1,3 @@
-rm -r ../docs
+# rm -r ../docs
 
-mv dist ../docs
+mv dist/* ../
