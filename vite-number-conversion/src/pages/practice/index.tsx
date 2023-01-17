@@ -1,10 +1,12 @@
 import React from "react";
 import CommonCard from "../../commonComponents/commonCard";
 import StyledLink from "../../commonComponents/styledLink";
+
+
 const Practice = ()=>{
   const jss = [
-    <StyledLink icon={'s'} title="阮一峰" desc="阮一峰的网络日志" link="/xx/ss/1.html"></StyledLink>,
-
+    // <StyledLink icon={truth} title="阮一峰" desc="阮一峰的网络日志" link="/xx/ss/1.html"></StyledLink>,
+1
   ]
   return (<div>
     Practice
