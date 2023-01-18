@@ -14,7 +14,7 @@ const Project = ()=>{
     <StyledLink icon={fish} title="捕鱼达人" desc="统计Chrome浏览器访问时间" link="https://chrome.google.com/webstore/detail/%E6%8D%95%E9%B1%BC%E8%BE%BE%E4%BA%BA/ofhlacmjhfeiecmgemiodedmpfckoomd"></StyledLink>,
   ]
   const interestingProject = [
-    <StyledLink icon={camera} title="" desc="(手机)无需权限访问用户相机" link="https://leigithub1024.github.io/openMyCamera/"></StyledLink>,
+    <StyledLink icon={camera} title="奇妙相机" desc="(手机)无需权限访问用户相机" link="https://leigithub1024.github.io/openMyCamera/"></StyledLink>,
 
   ]
   return (<div>
