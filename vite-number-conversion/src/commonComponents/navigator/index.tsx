@@ -16,7 +16,6 @@ export const Navigator = (props:{MenuItems:any[]})=>{
  
   function onclickFun(){
     const navigatorCycle = document.querySelector('.navigatorCycle')
-    // console.log(navigatorCycle?.classList.length)
     navigatorCycle?.classList.length==2? navigatorCycle?.classList.remove('navigatorCycle-hover') :     navigatorCycle?.classList.add('navigatorCycle-hover')
   }
 
@@ -24,7 +23,7 @@ export const Navigator = (props:{MenuItems:any[]})=>{
   
 
   return(<div>
-    <div className="navigatorCycle" onTouchEnd={onclickFun}  onClick={onclickFun}>
+    <div className="navigatorCycle" onTouchEnd={onclickFun}  >
       <div id="icon"><IconMenuUnfold /></div>
       <div onTouchEnd={(e)=>changeTabStatus(e)} id='horizenMenu' className="menu">{...MenuItems}</div>
     </div>
