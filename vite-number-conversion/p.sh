@@ -1,4 +1,6 @@
 npm run build
+cd ..
 git add .
-git commit -a -m $1
+git commit -m $1
 git push origin master
+cd ./vite-number-conversion

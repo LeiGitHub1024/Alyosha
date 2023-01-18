@@ -1,4 +1,4 @@
-#navigatorCycle{
+.navigatorCycle{
   width: 30px;
   height: 30px;
   position: absolute;
@@ -14,18 +14,12 @@
   transition-duration: .3s;
 }
 
-#navigatorCycle:hover{
+.navigatorCycle-hover{
   #icon{
     display: none;
   }
-  width: 10rem;
-  height: 27rem;
-}
-
-#navigatorCycle:active{
-  width: 30px;
-  height: 30px;
-  transition-delay: .2s;
+  width: 10rem !important;
+  height: 27rem !important;
 }
 
 
@@ -64,7 +58,7 @@
 }
 
 @media screen and (min-width: 601px) {  //大屏幕使用水平导航栏
-  #navigatorCycle{
+  .navigatorCycle{
     display: none;
   }
   #horizonMenu{
