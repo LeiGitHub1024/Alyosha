@@ -24,7 +24,7 @@ export const Navigator = (props:{MenuItems:any[]})=>{
   
 
   return(<div>
-    <div className="navigatorCycle"  onClick={onclickFun} onTouchStart={onclickFun}>
+    <div className="navigatorCycle" onTouchEnd={onclickFun}>
       <div id="icon"><IconMenuUnfold /></div>
       <div onClick={(e)=>changeTabStatus(e)} id='horizenMenu' className="menu">{...MenuItems}</div>
     </div>
