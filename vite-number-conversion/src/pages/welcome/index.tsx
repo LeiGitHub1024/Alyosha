@@ -14,8 +14,6 @@ const Welcome = ()=>{
     <div>
       <div className="font12">梦想</div>
       <div className="font36">全世界无产者<br/>联合起来</div>
-      
-      
     </div>
   )
 
@@ -24,7 +22,7 @@ const Welcome = ()=>{
       <div className="font12">技能</div>
       <div className="font36">xxxx</div>
 
-      <div>js/html/css3/ps/react/ts</div>
+      <div style={{height:'250px',backgroundColor:'green'}}>js/html/css3/ps/react/ts</div>
       
     </div>
   )
@@ -33,12 +31,15 @@ const Welcome = ()=>{
       <div className="font12">生涯</div>
       <div className="font36">终生学习</div>
 
-      2016-》2020-》现在
-      <br></br>
+      <div style={{height:"250px", backgroundColor:'yellow'}}>
+        2016-》2020-》现在
+        <br></br>
 
-      DLUT -》 BUPT -》？
-      <br></br>
-      Bytedance 
+        DLUT -》 BUPT -》？
+        <br></br>
+        Bytedance 
+      </div>
+     
 
     </div>
   )
@@ -53,7 +54,7 @@ const Welcome = ()=>{
       <div className="font12">导师</div>
       <div className="font36">切格瓦拉</div>
 
-      <div className="font16">直到最后的胜利</div>
+      <div className="font16">直到最后的胜利!</div>
 
       
     </div>
@@ -61,7 +62,7 @@ const Welcome = ()=>{
   const lol = (
     <div>
       <div className="font12">爱好游戏</div>
-      <div className="font36">英雄联盟</div>
+      <div className="font36" style={{height:'200px'}}>英雄联盟</div>
 
       （稻草人）
       
@@ -71,7 +72,7 @@ const Welcome = ()=>{
   const like = (
     <div>
       <div className="font12">喜欢</div>
-      <div className="font36">王冰冰</div>
+      <div className="font36" style={{height:'200px'}}>王冰冰</div>
       <div className="font16">我的心是冰冰的</div>
     </div>
   )
@@ -92,7 +93,7 @@ const Welcome = ()=>{
   
   const why = (
     <div>
-       <div className="font12">初心</div>
+      <div className="font12">初心</div>
 
       <div className="font16">
       知识积累与分享，如果能帮助到有需要的人，就更好了。
