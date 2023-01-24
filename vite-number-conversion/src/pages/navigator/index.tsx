@@ -24,33 +24,40 @@ const pathTitleMap = {
 type TypePathTitleMap = '/'|'/project'|'/thought'|'/superman'
 
 
-export const Navigator = (props:{MenuItems:any[]})=>{
+export const Navigator = ()=>{
   const [MenuTitle, setMenuTitle] = useState<string>('Home');
   const [iconState, setIconState] = useState<boolean>(true);
   const [theme, setTheme] = useState<string>('light');
   
   const location = useLocation();
- 
-  useEffect(() => {
-      console.log(location.pathname);
-      setMenuTitle(pathTitleMap[(location.pathname) as TypePathTitleMap ])
-  }, [location]);
+  useEffect(()=>{
+    console.log('sss',localStorage.getItem('theme-dark'))
+    if(localStorage.getItem('theme-dark')){
+      document.body.setAttribute('arco-theme', 'dark');
+      setTheme('dark')
+    }
+  },[])
 
-  
   function changeTheme(){
+    console.log(theme)
     if(theme=='dark'){
       document.body.removeAttribute('arco-theme');
+      localStorage.removeItem('theme-dark')
       setTheme('light')
     }else{
       document.body.setAttribute('arco-theme', 'dark');
+      localStorage.setItem('theme-dark','true')
       setTheme('dark')
     }
   }
 
+  useEffect(() => {
+      setMenuTitle(pathTitleMap[(location.pathname) as TypePathTitleMap ])
+  }, [location]);
+
 
   return(<div >
-
-    <div id="topnavigator">
+    <div id="topnavigator" >
       <Dropdown droplist={dropList} onVisibleChange={()=>{setIconState(!iconState)}}>
           {iconState?<IconMenuFold  className="menu-icon"/>:<IconMenuUnfold className="menu-icon"/>}
       </Dropdown>
@@ -60,13 +67,5 @@ export const Navigator = (props:{MenuItems:any[]})=>{
       </div>
     </div>
     <div style={{height:'70px'}}></div>
-
-
-{/*     
-    <div className="navigatorCycle" onTouchEnd={onclickFun}  >
-      <div id="icon"><IconMenuUnfold /></div>
-      <div onTouchEnd={(e)=>changeTabStatus(e)} id='horizenMenu' className="menu">{...MenuItems}</div>
-    </div>
-    <div onClick={(e)=>changeTabStatus(e)} id='verticleMenu' className="menu">{...MenuItems}</div> */}
   </div>)
 }
