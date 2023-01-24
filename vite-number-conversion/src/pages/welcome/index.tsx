@@ -28,28 +28,26 @@ const Welcome = ()=>{
       <div id="skill"> 
         <div id="scoll-bar">
           <div id='child1'> 
-            <IconContainer iconPath="https://img.zhheo.com/i/2022/08/22/63030a85d6458.png"/>
-            <IconContainer iconPath="https://img.zhheo.com/i/2022/08/22/63030a85d6458.png"/>
-            <IconContainer iconPath="https://img.zhheo.com/i/2022/08/22/63030a85d6458.png"/>
-            <IconContainer iconPath="https://img.zhheo.com/i/2022/08/22/63030a85d6458.png"/>
-            <IconContainer iconPath="https://img.zhheo.com/i/2022/08/22/63030a85d6458.png"/>
-            <IconContainer iconPath="https://img.zhheo.com/i/2022/08/22/63030a85d6458.png"/>
-            <IconContainer iconPath="https://img.zhheo.com/i/2022/08/22/63030a85d6458.png"/>
-            <IconContainer iconPath="https://img.zhheo.com/i/2022/08/22/63030a85d6458.png"/>
-            <IconContainer iconPath="https://img.zhheo.com/i/2022/08/22/63030a85d6458.png"/>
-            <IconContainer iconPath="https://img.zhheo.com/i/2022/08/22/63030a85d6458.png"/>
+            <IconContainer iconPath={getFullPath('icons/util/css')} bgcolor="#2c51db"/>
+            <IconContainer iconPath={getFullPath('icons/util/h5')} bgcolor="#e9572b"/>
+            <IconContainer iconPath={getFullPath('icons/util/js')} bgcolor="#f7cb4f"/>
+            <IconContainer iconPath={getFullPath('icons/util/ps')} bgcolor="#4082c3"/>
+            <IconContainer iconPath={getFullPath('icons/util/pr')} bgcolor=""/>
+            <IconContainer iconPath={getFullPath('icons/util/Python')} bgcolor="#fff"/>
+            <IconContainer iconPath={getFullPath('icons/util/swift')} bgcolor="#eb6840"/>
+
           </div>
           <div id='child2'>
-            <IconContainer iconPath="https://img.zhheo.com/i/2022/08/22/630311cf9dded.png"/>
-            <IconContainer iconPath="https://img.zhheo.com/i/2022/08/22/63030a85d6458.png"/>
-            <IconContainer iconPath="https://img.zhheo.com/i/2022/08/22/630311cf9dded.png"/>
-            <IconContainer iconPath="https://img.zhheo.com/i/2022/08/22/630311cf9dded.png"/>
-            <IconContainer iconPath="https://img.zhheo.com/i/2022/08/22/630311cf9dded.png"/>
-            <IconContainer iconPath="https://img.zhheo.com/i/2022/08/22/630311cf9dded.png"/>
-            <IconContainer iconPath="https://img.zhheo.com/i/2022/08/22/630311cf9dded.png"/>
-            <IconContainer iconPath="https://img.zhheo.com/i/2022/08/22/630311cf9dded.png"/>
-            <IconContainer iconPath="https://img.zhheo.com/i/2022/08/22/630311cf9dded.png"/>
-            <IconContainer iconPath="https://img.zhheo.com/i/2022/08/22/630311cf9dded.png"/>
+            <IconContainer iconPath={getFullPath('icons/util/git')} bgcolor="#df5b40"/>
+            <IconContainer iconPath={getFullPath('icons/util/pytorch')} bgcolor="#ddd"/>
+            <IconContainer iconPath={getFullPath('icons/util/python')} bgcolor=""/>
+            <IconContainer iconPath={getFullPath('icons/util/python')} bgcolor=""/>
+            <IconContainer iconPath={getFullPath('icons/util/python')} bgcolor=""/>
+            <IconContainer iconPath={getFullPath('icons/util/python')} bgcolor=""/>
+            <IconContainer iconPath={getFullPath('icons/util/python')} bgcolor=""/>
+            <IconContainer iconPath={getFullPath('icons/util/python')} bgcolor=""/>
+
+            
           </div>
         </div>
       </div> 
