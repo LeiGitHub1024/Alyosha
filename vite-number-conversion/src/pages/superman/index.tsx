@@ -1,14 +1,14 @@
 import React from "react";
 import CommonCard from "../../commonComponents/commonCard";
 import StyledLink from "../../commonComponents/styledLink";
-import apng from '../../assets/avaters/1.png'
+import { getFullPath } from "../../uitls/imagePath";
 
 const SuperMan = ()=>{
   // 个人技术播客
   const personBlogs = [
-    <StyledLink icon={apng} shape='circle' title="阮一峰" desc="阮一峰的网络日志" link="https://www.ruanyifeng.com/blog/"></StyledLink>,
-    <StyledLink icon={apng} shape='circle' title="张洪Heo" desc="张洪Heo,设计师、产品经理、独立开发者、博主" link="https://blog.zhheo.com/about/"></StyledLink>,
-    <StyledLink icon={apng} shape='circle' title="山月" desc="前端工程师" link=" https://q.shanyue.tech/"></StyledLink>,
+    <StyledLink shape='circle' title="阮一峰" desc="阮一峰的网络日志" icon={getFullPath("avaters/1.png")} link="https://www.ruanyifeng.com/blog/"></StyledLink>,
+    <StyledLink shape='circle' title="张洪Heo" desc="张洪Heo,设计师、产品经理、独立开发者、博主" icon={getFullPath("avaters/1.png")} link="https://blog.zhheo.com/about/"></StyledLink>,
+    <StyledLink shape='circle' title="山月" desc="前端工程师" icon={getFullPath("avaters/1.png")} link=" https://q.shanyue.tech/"></StyledLink>,
   ]
 
   const magicSites = [    

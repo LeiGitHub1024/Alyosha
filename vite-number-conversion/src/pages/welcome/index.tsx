@@ -52,27 +52,35 @@ const Welcome = ()=>{
   const leader = (
     <div>
       <div className="font12">导师</div>
-      <div className="font36">切格瓦拉</div>
+      <div className="font36" style={{height:'80px'}}>切格瓦拉</div>
 
-      <div className="font16">直到最后的胜利!</div>
+      <div className="font16">直到最后的胜利！</div>
 
       
     </div>
   )
   const lol = (
-    <div>
+    <div >
       <div className="font12">爱好游戏</div>
-      <div className="font36" style={{height:'200px'}}>英雄联盟</div>
+      <div className="font36" style={{height:'180px'}}>英雄联盟</div>
 
-      （稻草人）
+      {/* （稻草人） */}
+      <div style={{display:'flex', justifyContent:"space-between"}}>
+        <div>
+          <div className="icon-pos-jungle"></div>
+          <div className="icon-pos-mid"></div>
+        </div>
+        <div style={{}}>艾欧尼亚</div>
+      </div>
       
-      野中 艾欧尼亚/比尔吉沃特
+
+      {/* 野中 艾欧尼亚/比尔吉沃特 */}
     </div>
   )
   const like = (
     <div>
       <div className="font12">喜欢</div>
-      <div className="font36" style={{height:'200px'}}>王冰冰</div>
+      <div className="font36" style={{height:'180px'}}>王冰冰</div>
       <div className="font16">我的心是冰冰的</div>
     </div>
   )

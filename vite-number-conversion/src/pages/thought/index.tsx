@@ -1,7 +1,8 @@
 import React from "react";
 import CommonCard from "../../commonComponents/commonCard";
 import StyledLink from "../../commonComponents/styledLink";
-import che from "../../assets/icons/che.png"
+import { getFullPath } from "../../uitls/imagePath";
+// import che from "../../assets/icons/che.png"
 const Thought = ()=>{
   const FE = [
     <StyledLink title="前端性能指标" desc="介绍WebVitals的六个核心指标" link="https://leixiaojun.feishu.cn/docx/Lnehd7bA8oUONAxL9Bgcn5n4n6f"></StyledLink>,
@@ -13,7 +14,7 @@ const Thought = ()=>{
   ]
 
   const ideas = [
-    <StyledLink icon ={che} title="共产主义，与我何干？" desc="话剧《切格瓦拉》观后感" link="https://mp.weixin.qq.com/s/hIgHFbANkmMtHXtbQvs47w"></StyledLink>,
+    <StyledLink  title="共产主义，与我何干？" desc="话剧《切格瓦拉》观后感"  icon={getFullPath('icons/che.png')} link="https://mp.weixin.qq.com/s/hIgHFbANkmMtHXtbQvs47w"></StyledLink>,
 
   ]
   return (<div>
