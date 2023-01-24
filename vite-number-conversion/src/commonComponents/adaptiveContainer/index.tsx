@@ -1,14 +1,14 @@
 import React from "react";
 import "./style.less"
 
-const AdaptiveContainer = (props:{ child:any, width: string, height: string})=>{
-  const {child,width,height } = props
+const AdaptiveContainer = (props:{ child:any, width: string, height: string, bgi?: string})=>{
+  const {child,width,height,bgi } = props
+  console.log('bgi',bgi)
   return (
-    <div className="ada-container" style={{width:width, height:height}}  >
+    <div className="ada-container" style={{width:width, height:height, backgroundImage:`url(${bgi})`}}  >
       <div className="innnerBox">
         
         {child}
-
       </div>
     </div>
   )

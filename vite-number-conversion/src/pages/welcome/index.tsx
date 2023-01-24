@@ -1,5 +1,6 @@
 import React from "react";
 import AdaptiveContainer from "../../commonComponents/adaptiveContainer";
+import { getFullPath } from "../../uitls/imagePath";
 import "./style.less"
 
 const Welcome = ()=>{
@@ -12,8 +13,8 @@ const Welcome = ()=>{
   )
   const dream = (
     <div>
-      <div className="font12">梦想</div>
-      <div className="font36">全世界无产者<br/>联合起来</div>
+      {/* <div className="font12">！</div> */}
+      <div className="font36">好好学习<br/>天天向上</div>
     </div>
   )
 
@@ -50,7 +51,7 @@ const Welcome = ()=>{
     </div>
   )
   const leader = (
-    <div>
+    <div id="che">
       <div className="font12">导师</div>
       <div className="font36" style={{height:'80px'}}>切格瓦拉</div>
 
@@ -60,7 +61,7 @@ const Welcome = ()=>{
     </div>
   )
   const lol = (
-    <div >
+    <div id="lol">
       <div className="font12">爱好游戏</div>
       <div className="font36" style={{height:'180px'}}>英雄联盟</div>
 
@@ -78,7 +79,7 @@ const Welcome = ()=>{
     </div>
   )
   const like = (
-    <div>
+    <div id="bingbing">
       <div className="font12">喜欢</div>
       <div className="font36" style={{height:'180px'}}>王冰冰</div>
       <div className="font16">我的心是冰冰的</div>
@@ -132,14 +133,14 @@ const Welcome = ()=>{
       <div className="oneRow">
         <AdaptiveContainer width="36%" height="200px" child={motto}></AdaptiveContainer>
         <div className="divider" ></div>
-        <AdaptiveContainer width="58%" height="200px" child={leader}></AdaptiveContainer>
+        <AdaptiveContainer width="58%" height="200px" child={leader} bgi={getFullPath('backgrounds/che.jpeg')}></AdaptiveContainer>
       </div>
 
 
       <div className="oneRow">
-        <AdaptiveContainer width="58%" height="300px" child={lol}></AdaptiveContainer>
+        <AdaptiveContainer width="58%" height="300px" child={lol} bgi={getFullPath('backgrounds/moon.jpeg')}></AdaptiveContainer>
         <div className="divider" ></div>
-        <AdaptiveContainer width="37%" height="300px" child={like}></AdaptiveContainer>
+        <AdaptiveContainer width="37%" height="300px" child={like} bgi={getFullPath('backgrounds/bingbing.jpeg')}></AdaptiveContainer>
       </div>
       <div className="oneRow">
         <AdaptiveContainer width="97%" height="200px" child={why}></AdaptiveContainer>
