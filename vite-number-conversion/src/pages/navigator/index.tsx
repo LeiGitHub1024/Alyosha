@@ -1,22 +1,30 @@
 import React, { useEffect, useState } from "react"
 import "./style.less"
-import { Dropdown, Menu, Button, Space } from '@arco-design/web-react';
+import { Dropdown, Menu, Button, Space, Trigger } from '@arco-design/web-react';
 import { IconDown, IconList, IconMenuFold,IconMoon,IconSun} from '@arco-design/web-react/icon';
 import { useLocation } from 'react-router-dom';
 
 import { IconMenuUnfold } from '@arco-design/web-react/icon';
 import { Link } from "react-router-dom";
-const dropList = (
-  <Menu>
-    <Menu.Item key='1'><Link to='/' >首页</Link></Menu.Item>
-    <Menu.Item key='2'><Link to='/project' >实践</Link></Menu.Item>
-    <Menu.Item key='3'><Link to='/thought' >想法</Link></Menu.Item>
-    <Menu.Item key='4'><Link to='/superman'>他山之石</Link></Menu.Item>
-    <Menu.Item key='5'><a href="https://github.com/LeiGitHub1024/Alyosha" target="_blank" >GitHub</a> </Menu.Item>
+function renderMenu () {
+  return (
+    <Menu
+    style={{ margin:'0 0 0 2vw', width:'150px',borderRadius:'10px',boxShadow:' 0 0 2px var(--color-text-4)' }}
+    mode='pop'
+    tooltipProps={{ position: 'left' }} 
+
+    hasCollapseButton
+    >
+    <Link to='/' ><Menu.Item key='1'>主页</Menu.Item></Link>
+    <Link to='/project' > <Menu.Item key='2'>实践</Menu.Item></Link>
+    <Link to='/thought' ><Menu.Item key='3'>想法</Menu.Item></Link>
+    <Link to='/superman'><Menu.Item key='4'>他山之石</Menu.Item></Link>
+    <a href="https://github.com/LeiGitHub1024/Alyosha" target="_blank"> <Menu.Item key='5'>GitHub</Menu.Item></a> 
   </Menu>
-);
+  )
+};
 const pathTitleMap = {
-  '/': '首页',
+  '/': '主页',
   '/project':'项目',
   '/thought':"想法",
   '/superman':"他山之石",
@@ -27,6 +35,7 @@ type TypePathTitleMap = '/'|'/project'|'/thought'|'/superman'
 export const Navigator = ()=>{
   const [MenuTitle, setMenuTitle] = useState<string>('Home');
   const [iconState, setIconState] = useState<boolean>(true);
+  const [popupVisibleOne, setPopupVisibleOne] = useState(false);
   const [theme, setTheme] = useState<string>('light');
   
   const location = useLocation();
@@ -58,9 +67,21 @@ export const Navigator = ()=>{
 
   return(<div >
     <div id="topnavigator" >
-      <Dropdown droplist={dropList} onVisibleChange={()=>{setIconState(!iconState)} }>
+      {/* <Dropdown droplist={dropList} onVisibleChange={()=>{setIconState(!iconState)} }>
           {iconState?<IconMenuFold  className="menu-icon"/>:<IconMenuUnfold className="menu-icon"/>}
-      </Dropdown>
+      </Dropdown> */}
+      <Trigger
+        popup={renderMenu}
+        trigger={['click', 'hover']}
+        clickToClose
+        position='top'
+        onVisibleChange={(v) => setPopupVisibleOne(v)}
+      >
+        <div className={`menu-icon button-trigger ${popupVisibleOne ? 'button-trigger-active' : ''}`}>
+          {popupVisibleOne ? <IconMenuFold /> : <IconMenuUnfold />}
+        </div>
+      </Trigger>
+
       <div className='menu-title'>{MenuTitle}</div>
       <div onClick={changeTheme}>
         {theme=='dark'? <IconMoon className="menu-theme" />:<IconSun className="menu-theme"/>}
