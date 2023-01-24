@@ -28,24 +28,24 @@ const Welcome = ()=>{
       <div id="skill"> 
         <div id="scoll-bar">
           <div id='child1'> 
-            <IconContainer iconPath={getFullPath('icons/util/css')} bgcolor="#2c51db"/>
-            <IconContainer iconPath={getFullPath('icons/util/h5')} bgcolor="#e9572b"/>
-            <IconContainer iconPath={getFullPath('icons/util/js')} bgcolor="#f7cb4f"/>
-            <IconContainer iconPath={getFullPath('icons/util/ps')} bgcolor="#4082c3"/>
-            <IconContainer iconPath={getFullPath('icons/util/pr')} bgcolor=""/>
-            <IconContainer iconPath={getFullPath('icons/util/Python')} bgcolor="#fff"/>
-            <IconContainer iconPath={getFullPath('icons/util/swift')} bgcolor="#eb6840"/>
-
+            <IconContainer iconPath={getFullPath('icons/util/css.png')} bgcolor="#2c51db"/>
+            <IconContainer iconPath={getFullPath('icons/util/h5.png')} bgcolor="#e9572b"/>
+            <IconContainer iconPath={getFullPath('icons/util/js.png')} bgcolor="#f7cb4f"/>
+            <IconContainer iconPath={getFullPath('icons/util/ps.png')} bgcolor="#4082c3"/>
+            <IconContainer iconPath={getFullPath('icons/util/pr.png')} bgcolor=""/>
+            <IconContainer iconPath={getFullPath('icons/util/Python.png')} bgcolor="#fff"/>
+            <IconContainer iconPath={getFullPath('icons/util/swift.png')} bgcolor="#eb6840"/>
+            {/* https://raw.githubusercontent.com/LeiGitHub1024/Alyosha/master/images/icons/utiI/css.png */}
           </div>
           <div id='child2'>
-            <IconContainer iconPath={getFullPath('icons/util/git')} bgcolor="#df5b40"/>
-            <IconContainer iconPath={getFullPath('icons/util/pytorch')} bgcolor="#ddd"/>
-            <IconContainer iconPath={getFullPath('icons/util/python')} bgcolor=""/>
-            <IconContainer iconPath={getFullPath('icons/util/python')} bgcolor=""/>
-            <IconContainer iconPath={getFullPath('icons/util/python')} bgcolor=""/>
-            <IconContainer iconPath={getFullPath('icons/util/python')} bgcolor=""/>
-            <IconContainer iconPath={getFullPath('icons/util/python')} bgcolor=""/>
-            <IconContainer iconPath={getFullPath('icons/util/python')} bgcolor=""/>
+            <IconContainer iconPath={getFullPath('icons/util/git.png')} bgcolor="#df5b40"/>
+            <IconContainer iconPath={getFullPath('icons/util/pytorch.png')} bgcolor="#ddd"/>
+            <IconContainer iconPath={getFullPath('icons/util/python.png')} bgcolor=""/>
+            <IconContainer iconPath={getFullPath('icons/util/python.png')} bgcolor=""/>
+            <IconContainer iconPath={getFullPath('icons/util/python.png')} bgcolor=""/>
+            <IconContainer iconPath={getFullPath('icons/util/python.png')} bgcolor=""/>
+            <IconContainer iconPath={getFullPath('icons/util/python.png')} bgcolor=""/>
+            <IconContainer iconPath={getFullPath('icons/util/python.png')} bgcolor=""/>
 
             
           </div>
