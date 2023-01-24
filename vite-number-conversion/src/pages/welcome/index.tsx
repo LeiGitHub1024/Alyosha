@@ -32,22 +32,18 @@ const Welcome = ()=>{
             <IconContainer iconPath={getFullPath('icons/util/h5.png')} bgcolor="#e9572b"/>
             <IconContainer iconPath={getFullPath('icons/util/js.png')} bgcolor="#f7cb4f"/>
             <IconContainer iconPath={getFullPath('icons/util/ps.png')} bgcolor="#4082c3"/>
-            <IconContainer iconPath={getFullPath('icons/util/pr.png')} bgcolor=""/>
-            <IconContainer iconPath={getFullPath('icons/util/Python.png')} bgcolor="#fff"/>
+            <IconContainer iconPath={getFullPath('icons/util/pr.png')} bgcolor="#ddd"/>
+            <IconContainer iconPath={getFullPath('icons/util/Python.png')} bgcolor="#ddd"/>
             <IconContainer iconPath={getFullPath('icons/util/swift.png')} bgcolor="#eb6840"/>
-            {/* https://raw.githubusercontent.com/LeiGitHub1024/Alyosha/master/images/icons/utiI/css.png */}
           </div>
           <div id='child2'>
             <IconContainer iconPath={getFullPath('icons/util/git.png')} bgcolor="#df5b40"/>
             <IconContainer iconPath={getFullPath('icons/util/pytorch.png')} bgcolor="#ddd"/>
-            <IconContainer iconPath={getFullPath('icons/util/python.png')} bgcolor=""/>
-            <IconContainer iconPath={getFullPath('icons/util/python.png')} bgcolor=""/>
-            <IconContainer iconPath={getFullPath('icons/util/python.png')} bgcolor=""/>
-            <IconContainer iconPath={getFullPath('icons/util/python.png')} bgcolor=""/>
-            <IconContainer iconPath={getFullPath('icons/util/python.png')} bgcolor=""/>
-            <IconContainer iconPath={getFullPath('icons/util/python.png')} bgcolor=""/>
-
-            
+            <IconContainer iconPath={getFullPath('icons/util/react.png')} bgcolor="rgb(88,204,243)"/>
+            <IconContainer iconPath={getFullPath('icons/util/xcode.png')} bgcolor="rgb(20,85,216)"/>
+            <IconContainer iconPath={getFullPath('icons/util/vscode.png')} bgcolor="rgb(30,113,195)"/>
+            <IconContainer iconPath={getFullPath('icons/util/postman.png')} bgcolor="rgb(247,83,39)"/>
+            <IconContainer iconPath={getFullPath('icons/util/ts.png')} bgcolor="rgb(40,97,182)"/>
           </div>
         </div>
       </div> 
