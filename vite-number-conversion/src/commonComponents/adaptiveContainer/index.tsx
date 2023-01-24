@@ -3,7 +3,6 @@ import "./style.less"
 
 const AdaptiveContainer = (props:{ child:any, width: string, height: string, bgi?: string})=>{
   const {child,width,height,bgi } = props
-  console.log('bgi',bgi)
   return (
     <div className="ada-container" style={{width:width, height:height, backgroundImage:`url(${bgi})`}}  >
       <div className="innnerBox">

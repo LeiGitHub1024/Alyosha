@@ -8,13 +8,16 @@ const Welcome = ()=>{
     <div>
       <div className="font16">你好，欢迎光临阿廖沙的小屋</div>
       <div className="font36"> 我是 阿廖沙</div>
-      <div className="font16">是一名 前端工程师、辩证唯物主义爱好者</div>
+      <div className="font16">是一名 前端工程师、辩证唯物主义者</div>
     </div>
   )
   const dream = (
     <div>
       {/* <div className="font12">！</div> */}
-      <div className="font36">好好学习<br/>天天向上</div>
+      <div className="font36">
+        <div> <span>You </span> &nbsp; <span>Only</span></div>
+        <div> <span>Live</span> &nbsp; <span id='once'>Once</span></div>
+    </div>
     </div>
   )
 
@@ -23,7 +26,7 @@ const Welcome = ()=>{
       <div className="font12">技能</div>
       <div className="font36">xxxx</div>
 
-      <div style={{height:'250px',backgroundColor:'green'}}>js/html/css3/ps/react/ts</div>
+      <div style={{height:'250px',backgroundColor:'green'}}>制作中......js/html/css3/ps/react/ts</div>
       
     </div>
   )
@@ -33,6 +36,8 @@ const Welcome = ()=>{
       <div className="font36">终生学习</div>
 
       <div style={{height:"250px", backgroundColor:'yellow'}}>
+
+        制作中......
         2016-》2020-》现在
         <br></br>
 
@@ -46,14 +51,14 @@ const Welcome = ()=>{
   )
   const motto = (
     <div>
-      <div className="font12">座右铭</div>
-      <div className="font36">You Only <br></br> live Once</div>
+      {/* <div className="font12">座右铭</div> */}
+      <div className="font36">命运的礼物 <br></br> 都有价格</div>
     </div>
   )
   const leader = (
     <div id="che">
       <div className="font12">导师</div>
-      <div className="font36" style={{height:'80px'}}>切格瓦拉</div>
+      <div className="font36" style={{height:'80px'}}>切·格瓦拉</div>
 
       <div className="font16">直到最后的胜利！</div>
 
@@ -103,9 +108,9 @@ const Welcome = ()=>{
   const why = (
     <div>
       <div className="font12">初心</div>
-
-      <div className="font16">
-      知识积累与分享，如果能帮助到有需要的人，就更好了。
+      <br></br>
+      <div className="font16" style={{height:'110px'}}>
+      建站的初心是记录和分享遇到过的有趣项目，如果能恰好帮助到你，那就更好了。
       </div>
 
     </div>
@@ -133,14 +138,14 @@ const Welcome = ()=>{
       <div className="oneRow">
         <AdaptiveContainer width="36%" height="200px" child={motto}></AdaptiveContainer>
         <div className="divider" ></div>
-        <AdaptiveContainer width="58%" height="200px" child={leader} bgi={getFullPath('backgrounds/che.jpeg')}></AdaptiveContainer>
+        <AdaptiveContainer width="58%" height="200px" child={leader} bgi={getFullPath('backgrounds/che.jpg')}></AdaptiveContainer>
       </div>
 
 
       <div className="oneRow">
         <AdaptiveContainer width="58%" height="300px" child={lol} bgi={getFullPath('backgrounds/moon.jpeg')}></AdaptiveContainer>
         <div className="divider" ></div>
-        <AdaptiveContainer width="37%" height="300px" child={like} bgi={getFullPath('backgrounds/bingbing.jpeg')}></AdaptiveContainer>
+        <AdaptiveContainer width="37%" height="300px" child={like} bgi={getFullPath('backgrounds/bingbing.png')}></AdaptiveContainer>
       </div>
       <div className="oneRow">
         <AdaptiveContainer width="97%" height="200px" child={why}></AdaptiveContainer>
