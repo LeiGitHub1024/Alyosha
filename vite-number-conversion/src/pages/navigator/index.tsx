@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import "./style.less"
-import { Dropdown, Menu, Button, Space, Trigger } from '@arco-design/web-react';
-import { IconDown, IconList, IconMenuFold,IconMoon,IconSun} from '@arco-design/web-react/icon';
+import { Menu, Trigger } from '@arco-design/web-react';
+import { IconMenuFold,IconMoon,IconSun} from '@arco-design/web-react/icon';
 import { useLocation } from 'react-router-dom';
 
 import { IconMenuUnfold } from '@arco-design/web-react/icon';
@@ -18,7 +18,6 @@ type TypePathTitleMap = '/'|'/project'|'/thought'|'/superman'
 
 export const Navigator = ()=>{
   const [MenuTitle, setMenuTitle] = useState<string>('Home');
-  const [iconState, setIconState] = useState<boolean>(true);
   const [popupVisibleOne, setPopupVisibleOne] = useState(false);
   const [theme, setTheme] = useState<string>('light');
   
@@ -55,8 +54,6 @@ export const Navigator = ()=>{
       mode='vertical'
       tooltipProps={{ position: 'left' }}
       onClickMenuItem = { ()=>{setPopupVisibleOne(false)} }
-    
-      // hasCollapseButton
       >
       <Link to='/' ><Menu.Item key='1'>主页</Menu.Item></Link>
       <Link to='/project' > <Menu.Item key='2'>实践</Menu.Item></Link>
@@ -69,14 +66,10 @@ export const Navigator = ()=>{
 
   return(<div >
     <div id="topnavigator" >
-      {/* <Dropdown droplist={dropList} onVisibleChange={()=>{setIconState(!iconState)} }>
-          {iconState?<IconMenuFold  className="menu-icon"/>:<IconMenuUnfold className="menu-icon"/>}
-      </Dropdown> */}
       <Trigger
         popup={renderMenu}
         trigger={['click', 'hover']}
         clickToClose
-        // position='top'
         popupVisible={popupVisibleOne}
         popupStyle={{position: 'fixed', left:'2vw', top:'55px'}}  
         onVisibleChange={(v) => setPopupVisibleOne(v)}
