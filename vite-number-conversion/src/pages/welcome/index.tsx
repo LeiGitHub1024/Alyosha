@@ -24,7 +24,7 @@ const Welcome = ()=>{
   const skills = (
     <div>
       <div className="font12">技能</div>
-      <div className="font36">xxxx</div>
+      <div className="font36">好好学习</div>
       <div id="skill"> 
         <div id="scoll-bar">
           <div id='child1'> 
@@ -55,7 +55,7 @@ const Welcome = ()=>{
   const life = (
     <div>
       <div className="font12">生涯</div>
-      <div className="font36">终生学习</div>
+      <div className="font36">天天向上</div>
       <div id="example">
           <div><span className="cycle" style={{backgroundColor:'rgb(256,96,31)'}}> &nbsp;</span> DLUT，大连理工大学，数字媒体技术</div>
           <div><span className="cycle" style={{backgroundColor:'rgb(53,227,226)'}}>&nbsp;</span> BUPT，北京邮电大学，计算机 </div>
