@@ -35,9 +35,9 @@ const Welcome = ()=>{
       <div className="font12">生涯</div>
       <div className="font36">终生学习</div>
       <div id="example">
-          <div><span className="cycle" style={{backgroundColor:'rgb(256,96,31)'}}> 1</span> DLUT，大连理工大学，数字媒体技术</div>
-          <div><span className="cycle" style={{backgroundColor:'rgb(53,227,226)'}}>·</span> BUPT，北京邮电大学，计算机 </div>
-          <div><span className="cycle" style={{backgroundImage:'linear-gradient(120deg, rgb(53,136,252) 0%, rgb(42,175,184) 100%)'}}>·</span> B.D.（Bytedance），字节跳动，测试开发/前端实习 </div>
+          <div><span className="cycle" style={{backgroundColor:'rgb(256,96,31)'}}> &nbsp;</span> DLUT，大连理工大学，数字媒体技术</div>
+          <div><span className="cycle" style={{backgroundColor:'rgb(53,227,226)'}}>&nbsp;</span> BUPT，北京邮电大学，计算机 </div>
+          <div><span className="cycle" style={{backgroundImage:'linear-gradient(120deg, rgb(53,136,252) 0%, rgb(42,175,184) 100%)'}}>&nbsp;</span> B.D.（Bytedance），字节跳动，测试开发/前端实习 </div>
       </div>
 
 
