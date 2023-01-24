@@ -6,23 +6,7 @@ import { useLocation } from 'react-router-dom';
 
 import { IconMenuUnfold } from '@arco-design/web-react/icon';
 import { Link } from "react-router-dom";
-function renderMenu () {
-  return (
-    <Menu
-    style={{ margin:'0 0 0 2vw', width:'150px',borderRadius:'10px',boxShadow:' 0 0 2px var(--color-text-4)' }}
-    mode='pop'
-    tooltipProps={{ position: 'left' }} 
 
-    hasCollapseButton
-    >
-    <Link to='/' ><Menu.Item key='1'>主页</Menu.Item></Link>
-    <Link to='/project' > <Menu.Item key='2'>实践</Menu.Item></Link>
-    <Link to='/thought' ><Menu.Item key='3'>想法</Menu.Item></Link>
-    <Link to='/superman'><Menu.Item key='4'>他山之石</Menu.Item></Link>
-    <a href="https://github.com/LeiGitHub1024/Alyosha" target="_blank"> <Menu.Item key='5'>GitHub</Menu.Item></a> 
-  </Menu>
-  )
-};
 const pathTitleMap = {
   '/': '主页',
   '/project':'项目',
@@ -64,6 +48,24 @@ export const Navigator = ()=>{
       setMenuTitle(pathTitleMap[(location.pathname) as TypePathTitleMap ])
   }, [location]);
 
+  function renderMenu () {
+    return (
+      <Menu
+      style={{ width:'150px',borderRadius:'10px',boxShadow:'0 0 2px var(--color-text-4)' }}
+      mode='vertical'
+      tooltipProps={{ position: 'left' }}
+      onClickMenuItem = { ()=>{setPopupVisibleOne(false)} }
+    
+      // hasCollapseButton
+      >
+      <Link to='/' ><Menu.Item key='1'>主页</Menu.Item></Link>
+      <Link to='/project' > <Menu.Item key='2'>实践</Menu.Item></Link>
+      <Link to='/thought' ><Menu.Item key='3'>想法</Menu.Item></Link>
+      <Link to='/superman'><Menu.Item key='4'>他山之石</Menu.Item></Link>
+      <a href="https://github.com/LeiGitHub1024/Alyosha" target="_blank"> <Menu.Item key='5'>GitHub</Menu.Item></a> 
+    </Menu>
+    )
+  };
 
   return(<div >
     <div id="topnavigator" >
@@ -74,7 +76,9 @@ export const Navigator = ()=>{
         popup={renderMenu}
         trigger={['click', 'hover']}
         clickToClose
-        position='top'
+        // position='top'
+        popupVisible={popupVisibleOne}
+        popupStyle={{position: 'fixed', left:'2vw', top:'55px'}}  
         onVisibleChange={(v) => setPopupVisibleOne(v)}
       >
         <div className={`menu-icon button-trigger ${popupVisibleOne ? 'button-trigger-active' : ''}`}>
