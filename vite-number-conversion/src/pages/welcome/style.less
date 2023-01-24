@@ -78,16 +78,11 @@
 }
 
 @keyframes scroll {
-    
     0% {
         transform: translateX(0) ;
-
-
     }
     100% {
-        transform: translateX(-100%) translateX(calc(0.95*47%));
-
-
+        transform: translateX(-840px) translateX(calc((.94*47vw)));
     }
 }
 
@@ -100,7 +95,6 @@
     position: absolute;
     height:100%;
     width: 100%;
-    // border: solid 2px;
     border-radius: 25px;
     overflow: hidden;
 
@@ -108,16 +102,9 @@
     #scoll-bar{
         display: flex;
         flex-wrap: wrap;
-
         margin-top: 150px;
         height: 250px;
-        width: 1250px;
-
-        // rotate: -30deg;
- 
-        // border: solid 2px red;
-
-
+        width: 840px;
         div div{
             margin: 10px;
         }
@@ -129,6 +116,7 @@
             flex-wrap: nowrap;
         }
         animation: scroll infinite 50s linear;
+        animation-fill-mode: forwards;
     }
 }
 
@@ -136,12 +124,9 @@
 
 .growth{
     height:150px;
-    // width:250px;
-    // background-color:yellow;
     background-size: contain;
     background-position: 0px 10px;
     background-repeat: no-repeat;
-    // position:absolute;
     margin:0 -40px 0 -40px ;
 }
 
