@@ -31,7 +31,7 @@ export const Navigator = ()=>{
   
   const location = useLocation();
   useEffect(()=>{
-    console.log('sss',localStorage.getItem('theme-dark'))
+    // console.log('sss',localStorage.getItem('theme-dark'))
     if(localStorage.getItem('theme-dark')){
       document.body.setAttribute('arco-theme', 'dark');
       setTheme('dark')
@@ -39,7 +39,7 @@ export const Navigator = ()=>{
   },[])
 
   function changeTheme(){
-    console.log(theme)
+    // console.log(theme)
     if(theme=='dark'){
       document.body.removeAttribute('arco-theme');
       localStorage.removeItem('theme-dark')
@@ -58,7 +58,7 @@ export const Navigator = ()=>{
 
   return(<div >
     <div id="topnavigator" >
-      <Dropdown droplist={dropList} onVisibleChange={()=>{setIconState(!iconState)}}>
+      <Dropdown droplist={dropList} onVisibleChange={()=>{setIconState(!iconState)} }>
           {iconState?<IconMenuFold  className="menu-icon"/>:<IconMenuUnfold className="menu-icon"/>}
       </Dropdown>
       <div className='menu-title'>{MenuTitle}</div>

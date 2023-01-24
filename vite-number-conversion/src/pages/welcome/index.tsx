@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AdaptiveContainer from "../../commonComponents/adaptiveContainer";
 import IconContainer from "../../commonComponents/iconContainer";
 import { getFullPath } from "../../uitls/imagePath";
@@ -98,7 +98,6 @@ const Welcome = ()=>{
       <div className="font16">我的心是冰冰的</div>
     </div>
   )
-  
   const why = (
     <div>
       <div className="font12">初心</div>
@@ -108,8 +107,15 @@ const Welcome = ()=>{
       </div>
     </div>
   )
-
-
+  function copyLastFour(x:string){
+    let parent = document.querySelector(x)
+    let lastFour =[...Array.prototype.slice.call(parent?.children, 0,4)];
+    lastFour.forEach(e=>{
+      parent?.appendChild(e.cloneNode(true))
+    })
+    let y = document.querySelector(x)
+  }
+  useEffect(()=>{copyLastFour('#child1');copyLastFour('#child2');}, [])
 
   return (
     
