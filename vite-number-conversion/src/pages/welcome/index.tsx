@@ -34,19 +34,7 @@ const Welcome = ()=>{
     <div>
       <div className="font12">生涯</div>
       <div className="font36">终生学习</div>
-
-      <div style={{height:"250px", backgroundColor:'yellow'}}>
-
-        制作中......
-        2016-》2020-》现在
-        <br></br>
-
-        DLUT -》 BUPT -》？
-        <br></br>
-        Bytedance 
-      </div>
-     
-
+      <div className="growth" style={{backgroundImage:`url(${getFullPath('backgrounds/growth.png')})`}}></div>
     </div>
   )
   const motto = (
