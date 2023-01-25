@@ -117,9 +117,7 @@ const Welcome = ()=>{
   }
   useEffect(()=>{copyLastFour('#child1');copyLastFour('#child2');}, [])
 
-  return (
-    
-  <>
+  return (<>
     <div id="alyosha">
       阿廖沙的小屋
     </div>

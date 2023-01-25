@@ -50,16 +50,17 @@ export const Navigator = ()=>{
   function renderMenu () {
     return (
       <Menu
-      style={{ width:'150px',borderRadius:'10px',boxShadow:'0 0 2px var(--color-text-4)' }}
+      style={{ width:'148px',borderRadius:'10px',boxShadow:'0 0 2px var(--color-text-4)',fontSize:'18px' }}
       mode='vertical'
       tooltipProps={{ position: 'left' }}
       onClickMenuItem = { ()=>{setPopupVisibleOne(false)} }
+      
       >
-      <Link to='/' ><Menu.Item key='1'>主页</Menu.Item></Link>
-      <Link to='/project' > <Menu.Item key='2'>实践</Menu.Item></Link>
-      <Link to='/thought' ><Menu.Item key='3'>想法</Menu.Item></Link>
-      <Link to='/superman'><Menu.Item key='4'>他山之石</Menu.Item></Link>
-      <a href="https://github.com/LeiGitHub1024/Alyosha" target="_blank"> <Menu.Item key='5'>GitHub</Menu.Item></a> 
+      <Link to='/' ><Menu.Item key='1'>🛖 主页 🛖</Menu.Item></Link>
+      <Link to='/project' > <Menu.Item key='2'>🔨 实践 🔨</Menu.Item></Link>
+      <Link to='/thought' ><Menu.Item key='3'>💡 想法 💡</Menu.Item></Link>
+      <Link to='/superman'><Menu.Item key='4'>⛰ 他山之石</Menu.Item></Link>
+      <a href="https://github.com/LeiGitHub1024/Alyosha" target="_blank"> <Menu.Item key='5'>🔗 GitHub 🔗</Menu.Item></a> 
     </Menu>
     )
   };
