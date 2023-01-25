@@ -1,11 +1,11 @@
 import React from "react";
-import CommonCard from "../../commonComponents/commonCard";
-import StyledLink from "../../commonComponents/styledLink";
+import StaticContainer from "../../commonComponents/containers/staticContainer";
+import LinkCard from "../../commonComponents/cards/LinkCard";
 
 
 const Practice = ()=>{
   const jss = [
-    // <StyledLink icon={truth} title="阮一峰" desc="阮一峰的网络日志" link="/xx/ss/1.html"></StyledLink>,
+    // <LinkCard icon={truth} title="阮一峰" desc="阮一峰的网络日志" link="/xx/ss/1.html"></LinkCard>,
 1
   ]
   return (<div>
@@ -23,7 +23,7 @@ const Practice = ()=>{
     二维码生成
     拖拽
 
-    <CommonCard title='个人技术博客' links={jss} ></CommonCard>
+    <StaticContainer title='个人技术博客' links={jss} ></StaticContainer>
 
   </div>)
 }

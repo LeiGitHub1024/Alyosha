@@ -1,21 +1,20 @@
 import React from "react";
-import CommonCard from "../../commonComponents/commonCard";
-import StyledLink from "../../commonComponents/styledLink";
+import StaticContainer from "../../commonComponents/containers/staticContainer";
+import LinkCard from "../../commonComponents/cards/LinkCard";
 import { getFullPath } from "../../uitls/imagePath";
+import FlexContainer from "../../commonComponents/containers/flexContainer";
+import ArticleCard from "../../commonComponents/cards/articleCard";
 // import che from "../../assets/icons/che.png"
 const Thought = ()=>{
   const FE = [
-    <StyledLink title="前端性能指标" desc="介绍WebVitals的六个核心指标" link="https://leixiaojun.feishu.cn/docx/Lnehd7bA8oUONAxL9Bgcn5n4n6f"></StyledLink>,
-    <StyledLink title="优雅获取dom坐标" desc="使用IntersectionObserver" link="https://bytedance.feishu.cn/docx/doxcniravL9G0VoNcjBoXnc6bZf"></StyledLink>,
-
-    <StyledLink title="HTML渲染原理" desc="浏览器解析HTML的原理" link="https://leixiaojun.feishu.cn/docx/Lnehd7bA8oUONAxL9Bgcn5n4n6f"></StyledLink>,
-    <StyledLink title="原型与原型链" desc="形象地解释原型与原型链" link="https://leixiaojun.feishu.cn/docx/K29QdwLN7oMICGxCCMTcnGENnLc"></StyledLink>,
-
+    <ArticleCard title="前端性能指标" introduction="介绍WebVitals的六个核心指标" href="https://leixiaojun.feishu.cn/docx/Lnehd7bA8oUONAxL9Bgcn5n4n6f" imgPath={getFullPath("backgrounds/che.png")}></ArticleCard>,
+    <ArticleCard title="优雅获取dom坐标" introduction="使用IntersectionObserver" href="https://bytedance.feishu.cn/docx/doxcniravL9G0VoNcjBoXnc6bZf" imgPath={getFullPath("backgrounds/che.png")}></ArticleCard>,
+    <ArticleCard title="HTML渲染原理" introduction="浏览器解析HTML的原理" href="https://leixiaojun.feishu.cn/docx/Lnehd7bA8oUONAxL9Bgcn5n4n6f" imgPath={getFullPath("backgrounds/che.png")}></ArticleCard>,
+    <ArticleCard title="原型与原型链" introduction="形象地解释原型与原型链" href="https://leixiaojun.feishu.cn/docx/K29QdwLN7oMICGxCCMTcnGENnLc" imgPath={getFullPath("backgrounds/che.png")}></ArticleCard>,
   ]
 
   const ideas = [
-    <StyledLink  title="共产主义，与我何干？" desc="话剧《切格瓦拉》观后感"  icon={getFullPath('icons/che.png')} link="https://mp.weixin.qq.com/s/hIgHFbANkmMtHXtbQvs47w"></StyledLink>,
-
+    <ArticleCard  title="共产主义，与我何干？" introduction="话剧《切格瓦拉》观后感"  imgPath={getFullPath('icons/che.png')} href="https://mp.weixin.qq.com/s/hIgHFbANkmMtHXtbQvs47w"></ArticleCard>,
   ]
   return (<div>
     {/* Practice
@@ -25,15 +24,13 @@ const Thought = ()=>{
     事件监听，双向绑定
     call bind apply
     
-   
     带背景的文字
 
     应用
     二维码生成
     拖拽 */}
-
-    <CommonCard title='前端基础' links={FE} ></CommonCard>
-    <CommonCard title='奇思妙想' links={ideas} ></CommonCard>
+    <FlexContainer title="实用项目" width='100%' child={FE}></FlexContainer>
+    <FlexContainer title='奇思妙想' width='100%' child={ideas} ></FlexContainer>
 
     
   </div>)

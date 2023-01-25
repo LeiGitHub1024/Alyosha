@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import AdaptiveContainer from "../../commonComponents/adaptiveContainer";
-import IconContainer from "../../commonComponents/iconContainer";
+import AdaptiveContainer from "../../commonComponents/containers/adaptiveContainer";
+import IconContainer from "../../commonComponents/containers/iconContainer";
 import { getFullPath } from "../../uitls/imagePath";
 import "./style.less"
 
