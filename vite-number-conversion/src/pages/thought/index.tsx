@@ -7,10 +7,10 @@ import ArticleCard from "../../commonComponents/cards/articleCard";
 // import che from "../../assets/icons/che.png"
 const Thought = ()=>{
   const FE = [
-    <ArticleCard title="前端性能指标" introduction="介绍WebVitals的六个核心指标" href="https://leixiaojun.feishu.cn/docx/Lnehd7bA8oUONAxL9Bgcn5n4n6f" imgPath={getFullPath("backgrounds/che.png")}></ArticleCard>,
-    <ArticleCard title="优雅获取dom坐标" introduction="使用IntersectionObserver" href="https://bytedance.feishu.cn/docx/doxcniravL9G0VoNcjBoXnc6bZf" imgPath={getFullPath("backgrounds/che.png")}></ArticleCard>,
-    <ArticleCard title="HTML渲染原理" introduction="浏览器解析HTML的原理" href="https://leixiaojun.feishu.cn/docx/Lnehd7bA8oUONAxL9Bgcn5n4n6f" imgPath={getFullPath("backgrounds/che.png")}></ArticleCard>,
-    <ArticleCard title="原型与原型链" introduction="形象地解释原型与原型链" href="https://leixiaojun.feishu.cn/docx/K29QdwLN7oMICGxCCMTcnGENnLc" imgPath={getFullPath("backgrounds/che.png")}></ArticleCard>,
+    <ArticleCard title="前端性能指标" introduction="介绍WebVitals的六个核心指标"  imgPath={getFullPath("backgrounds/thought/webvitals.png")} href="https://bytedance.feishu.cn/docx/doxcnVatIi1QFvKbIhHBFtbWnug" ></ArticleCard>,
+    <ArticleCard title="优雅获取dom坐标" introduction="使用IntersectionObserver" imgPath={getFullPath("backgrounds/thought/rect.png")} href="https://bytedance.feishu.cn/docx/doxcniravL9G0VoNcjBoXnc6bZf" ></ArticleCard>,
+    <ArticleCard title="HTML渲染原理" introduction="浏览器解析HTML的原理"  imgPath={getFullPath("backgrounds/thought/html.png")} href="https://leixiaojun.feishu.cn/docx/Lnehd7bA8oUONAxL9Bgcn5n4n6f" ></ArticleCard>,
+    <ArticleCard title="原型与原型链" introduction="形象地解释原型与原型链"  imgPath={getFullPath("backgrounds/thought/aniya.png")} href="https://leixiaojun.feishu.cn/docx/K29QdwLN7oMICGxCCMTcnGENnLc"></ArticleCard>,
   ]
 
   const ideas = [
