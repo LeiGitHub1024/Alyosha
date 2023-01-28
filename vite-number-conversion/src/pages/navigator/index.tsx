@@ -16,6 +16,7 @@ const pathTitleMap = {
 type TypePathTitleMap = '/'|'/project'|'/thought'|'/superman'
 
 
+
 export const Navigator = ()=>{
   const [MenuTitle, setMenuTitle] = useState<string>('Home');
   const [popupVisibleOne, setPopupVisibleOne] = useState(false);
@@ -46,6 +47,25 @@ export const Navigator = ()=>{
   useEffect(() => {
       setMenuTitle(pathTitleMap[(location.pathname) as TypePathTitleMap ])
   }, [location]);
+  useEffect(()=>{
+    const hMenu = document.querySelector('#horizon-menu')
+    const title = document.querySelector('.menu-title')
+    window.addEventListener("scroll", function() {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      if (scrollTop == 0) {
+        // console.log(scrollTop,hMenu,title)
+        hMenu?.classList.remove('hidden')
+        title?.classList.add('hidden')
+        //展示目录
+      } else if(scrollTop>20&&scrollTop<40){
+        // console.log(scrollTop,hMenu,title)
+      
+        hMenu?.classList.add('hidden')
+        title?.classList.remove('hidden')
+        //展示标题
+      }
+    });
+  },[])
 
   function renderMenu () {
     return (
@@ -54,13 +74,12 @@ export const Navigator = ()=>{
       mode='vertical'
       tooltipProps={{ position: 'left' }}
       onClickMenuItem = { ()=>{setPopupVisibleOne(false)} }
-      
       >
-      <Link to='/' ><Menu.Item key='1'>🛖 主页 🛖</Menu.Item></Link>
-      <Link to='/project' > <Menu.Item key='2'>🔨 实践 🔨</Menu.Item></Link>
-      <Link to='/thought' ><Menu.Item key='3'>💡 想法 💡</Menu.Item></Link>
-      <Link to='/superman'><Menu.Item key='4'>⛰ 他山之石</Menu.Item></Link>
-      <a href="https://github.com/LeiGitHub1024/Alyosha" target="_blank"> <Menu.Item key='5'>🔗 GitHub 🔗</Menu.Item></a> 
+      <Link to='/' ><Menu.Item key='1'>🏡主页</Menu.Item></Link>
+      <Link to='/project' > <Menu.Item key='2'>🔨实践</Menu.Item></Link>
+      <Link to='/thought' ><Menu.Item key='3'>💡想法</Menu.Item></Link>
+      <Link to='/superman'><Menu.Item key='4'>⛰他山之石</Menu.Item></Link>
+      <a href="https://github.com/LeiGitHub1024/Alyosha" target="_blank"> <Menu.Item key='5'>🔗GitHub</Menu.Item></a> 
     </Menu>
     )
   };
@@ -79,11 +98,19 @@ export const Navigator = ()=>{
           {popupVisibleOne ? <IconMenuFold /> : <IconMenuUnfold />}
         </div>
       </Trigger>
+      <div id='horizon-menu'>
+        <Link to='/' >主页</Link>
+        <Link to='/project' >  实践 </Link>
+        <Link to='/thought' > 想法 </Link>
+        <Link to='/superman'>他山之石</Link>
+        <a href="https://github.com/LeiGitHub1024/Alyosha" target="_blank"> <Menu.Item key='5'>GitHub</Menu.Item></a> 
+      </div>
+      <div className='menu-title hidden'>{MenuTitle}</div>
 
-      <div className='menu-title'>{MenuTitle}</div>
       <div onClick={changeTheme}>
         {theme=='dark'? <IconMoon className="menu-theme" />:<IconSun className="menu-theme"/>}
       </div>
+
     </div>
     <div style={{height:'70px'}}></div>
   </div>)

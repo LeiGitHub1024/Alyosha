@@ -3,8 +3,15 @@ import AdaptiveContainer from "../../commonComponents/containers/adaptiveContain
 import IconContainer from "../../commonComponents/containers/iconContainer";
 import { getFullPath } from "../../uitls/imagePath";
 import "./style.less"
-
+let idx = 0
+function changeItem(dom:any){
+  let nodeList = dom?.children ||[]
+  nodeList[idx].setAttribute('class','up')
+  nodeList[(idx+1)%3].setAttribute('class','show')
+  nodeList[(idx+2)%3].setAttribute('class','hidden')
+}
 const Welcome = ()=>{
+
   const welcome = (
     <div>
       <div className="font16">你好，欢迎光临阿廖沙的小屋</div>
@@ -15,8 +22,22 @@ const Welcome = ()=>{
   const dream = (
     <div>
       <div className="font36">
-        <div> <span>You </span> &nbsp; <span>Only</span></div>
-        <div> <span>Live</span> &nbsp; <span id='once'>Once</span></div>
+        <div className="outerContainer"> 
+          <span>不</span> &nbsp; 
+          <div className="midContainer" >
+              <span className="up">寻找爱情</span>
+              <span className="show">渴望成功</span>
+              <span>追求成长</span>
+          </div>
+        </div>
+        <div className="outerContainer"> 
+          <span>只是去</span> &nbsp; 
+          <div className='midContainer' >
+              <span className="up">爱</span>
+              <span className="show" >做</span>
+              <span >修</span>
+          </div>
+        </div>
     </div>
     </div>
   )
@@ -116,6 +137,19 @@ const Welcome = ()=>{
     let y = document.querySelector(x)
   }
   useEffect(()=>{copyLastFour('#child1');copyLastFour('#child2');}, [])
+
+
+  useEffect(()=>{
+    (function x(){
+      setTimeout(()=>{
+        changeItem(document.querySelectorAll('.midContainer')[0])
+        changeItem(document.querySelectorAll('.midContainer')[1])
+        idx = (idx+1)%3
+
+        x()
+      },2000)
+    })()
+  },[])
 
   return (<>
     <div id="alyosha">
