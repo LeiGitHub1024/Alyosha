@@ -51,7 +51,7 @@ const Welcome = ()=>{
         </div>
         <div className="outerContainer"> 
           <span>只是去</span> &nbsp; 
-          <div className='midContainer' >
+          <div className='midContainer' style={{width:'60px'}}>
               <span className="up">爱</span>
               <span className="show" >做</span>
               <span >修</span>
