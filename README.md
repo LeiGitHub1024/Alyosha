@@ -9,6 +9,7 @@
   - 小图直接本地编辑成字符串，
   - 大图存储到 https://www.superbed.cn/admin ，绑定了微信登录，进而提升访问速度。
   - 更新网站图标，来自：https://www.logosc.cn/logo/?s=%E7%8C%B4%E5%AD%90
+  - 更新footer
 ### 2023.1.20-25 参考张洪Heo,样式全面升级:
   - 欢迎页基本全部构建完成。感谢张洪Heo，提供了很多思路。
   - 新增google analytics，统计网站访问情况

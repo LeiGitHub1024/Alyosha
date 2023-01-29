@@ -141,9 +141,24 @@ const Welcome = ()=>{
   const why = (
     <div>
       <div className="font12">初心</div>
-      <br></br>
-      <div className="font16" style={{height:'110px'}}>
-      建站的初心是记录和分享遇到过的有趣项目，如果能恰好帮助到你，那就更好了。
+      <br/><br/>
+      <div className="font16" style={{height:'280px'}}>
+      分享是最好的学习。
+      <br/><br/>
+      22年末遇到了周岭先生的《认知驱动》，书中关于“
+      <span style={{color:"#f2b94b"}}>为什么我们很努力却总是看不到希望</span>
+      ”的讨论吸引了我。
+      我们总是努力享受奋斗的状态，却少有产出作品的意识。
+      我们一直在读书，却少有去实践或把心得写出来；我们一直在练琴，却很少能用完整熟练的曲子向别人表演；我们一直在学画，却很少用作品去出给创造、展示，更别说收获粉丝的欣赏和点赞。
+      <br/><br/>
+
+      为什么会这样呢？答案很简单：培养习惯容易，打造技能难！培养习惯容易，因为它不需要严格的标准——可高可低，可紧可松，就像一门不用考试的课程，好坏不要紧，只要自己开心就好。说打造技能难，是因为它的好坏全由外界评定——行就是行，不行就是不行。
+      <br/><br/>
+      因此建立了本站，将其作为
+      
+      <span style={{color:"#f2b94b"}}>知识梳理与分享</span>
+      的大本营，如果能帮助到有需要的人，那便更好了。
+
       </div>
     </div>
   )
@@ -196,7 +211,7 @@ const Welcome = ()=>{
         <AdaptiveContainer width="37%" height="300px" child={like} bgi="https://pic.imgdb.cn/item/63d5c4f5face21e9ef980677.png"></AdaptiveContainer>
       </div>
       <div className="oneRow">
-        <AdaptiveContainer width="97%" height="200px" child={why}></AdaptiveContainer>
+        <AdaptiveContainer width="97%" height="400px" child={why}></AdaptiveContainer>
       </div>
     </div>
 

@@ -79,7 +79,6 @@ export const Navigator = ()=>{
       <Link to='/project' > <Menu.Item key='2'>🔨实践</Menu.Item></Link>
       <Link to='/thought' ><Menu.Item key='3'>💡想法</Menu.Item></Link>
       <Link to='/superman'><Menu.Item key='4'>⛰他山之石</Menu.Item></Link>
-      <a href="https://github.com/LeiGitHub1024/Alyosha" target="_blank"> <Menu.Item key='5'>🔗GitHub</Menu.Item></a> 
     </Menu>
     )
   };
@@ -103,7 +102,6 @@ export const Navigator = ()=>{
         <Link to='/project' >  实践 </Link>
         <Link to='/thought' > 想法 </Link>
         <Link to='/superman'>他山之石</Link>
-        <a href="https://github.com/LeiGitHub1024/Alyosha" target="_blank"> <Menu.Item key='5'>GitHub</Menu.Item></a> 
       </div>
       <div className='menu-title hidden'>{MenuTitle}</div>
 

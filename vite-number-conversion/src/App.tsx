@@ -7,6 +7,7 @@ import Welcome from './pages/welcome';
 import Project from './pages/project/inedex';
 import SuperMan from './pages/superman';
 import Thought from './pages/thought';
+import Footer from './pages/footer'
 function App() {
   return (
     <div>
@@ -19,6 +20,7 @@ function App() {
             <Route path="/superman" element={<SuperMan />} />
           </Routes>
       </div>
+      <Footer></Footer>
     </div>
   )
 }
