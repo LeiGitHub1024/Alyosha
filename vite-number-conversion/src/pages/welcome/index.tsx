@@ -3,6 +3,25 @@ import AdaptiveContainer from "../../commonComponents/containers/adaptiveContain
 import IconContainer from "../../commonComponents/containers/iconContainer";
 import { getFullPath } from "../../uitls/imagePath";
 import "./style.less"
+
+import iCss from './icon/css.png'
+import iGit from './icon/git.png'
+import iH5 from './icon/h5.png'
+import iJs from './icon/js.png'
+import iPostman from './icon/postman.png'
+import iPr from './icon/pr.png'
+import iPs from './icon/ps.png'
+import iPython from './icon/python.png'
+import iPytorch from './icon/pytorch.png'
+import iReact from './icon/react.png'
+import iSwift from './icon/swift.png'
+import iTs from './icon/ts.png'
+import iVscode from './icon/vscode.png'
+import iVue from './icon/vue.png'
+import iXcode from './icon/xcode.png'
+
+
+
 let idx = 0
 function changeItem(dom:any){
   let nodeList = dom?.children ||[]
@@ -49,22 +68,22 @@ const Welcome = ()=>{
       <div id="skill"> 
         <div id="scoll-bar">
           <div id='child1'> 
-            <IconContainer iconPath={getFullPath('icons/util/css.png')} bgcolor="#2c51db"/>
-            <IconContainer iconPath={getFullPath('icons/util/h5.png')} bgcolor="#e9572b"/>
-            <IconContainer iconPath={getFullPath('icons/util/js.png')} bgcolor="#f7cb4f"/>
-            <IconContainer iconPath={getFullPath('icons/util/swift.png')} bgcolor="#eb6840"/>
-            <IconContainer iconPath={getFullPath('icons/util/Python.png')} bgcolor="#eee"/>
-            <IconContainer iconPath={getFullPath('icons/util/ps.png')} bgcolor="#4082c3"/>
-            <IconContainer iconPath={getFullPath('icons/util/react.png')} bgcolor="rgb(88,204,243)"/>
+            <IconContainer iconPath={iCss} bgcolor="#2c51db"/>
+            <IconContainer iconPath={iH5} bgcolor="#e9572b"/>
+            <IconContainer iconPath={iJs} bgcolor="#f7cb4f"/>
+            <IconContainer iconPath={iSwift} bgcolor="#eb6840"/>
+            <IconContainer iconPath={iPython} bgcolor="#eee"/>
+            <IconContainer iconPath={iPs} bgcolor="#4082c3"/>
+            <IconContainer iconPath={iReact} bgcolor="rgb(88,204,243)"/>
           </div>
           <div id='child2'>
-            <IconContainer iconPath={getFullPath('icons/util/git.png')} bgcolor="#df5b40"/>
-            <IconContainer iconPath={getFullPath('icons/util/pr.png')} bgcolor="rgb(133,132,255)"/>
-            <IconContainer iconPath={getFullPath('icons/util/pytorch.png')} bgcolor="rgb(219,49,30)"/>
-            <IconContainer iconPath={getFullPath('icons/util/xcode.png')} bgcolor="rgb(20,85,216)"/>
-            <IconContainer iconPath={getFullPath('icons/util/postman.png')} bgcolor="rgb(247,83,39)"/>
-            <IconContainer iconPath={getFullPath('icons/util/vscode.png')} bgcolor="rgb(30,113,195)"/>
-            <IconContainer iconPath={getFullPath('icons/util/ts.png')} bgcolor="rgb(40,97,182)"/>
+            <IconContainer iconPath={iGit} bgcolor="#df5b40"/>
+            <IconContainer iconPath={iPr} bgcolor="rgb(133,132,255)"/>
+            <IconContainer iconPath={iPytorch} bgcolor="rgb(219,49,30)"/>
+            <IconContainer iconPath={iXcode} bgcolor="rgb(20,85,216)"/>
+            <IconContainer iconPath={iPostman} bgcolor="rgb(247,83,39)"/>
+            <IconContainer iconPath={iVscode} bgcolor="rgb(30,113,195)"/>
+            <IconContainer iconPath={iTs} bgcolor="rgb(40,97,182)"/>
           </div>
         </div>
       </div> 
