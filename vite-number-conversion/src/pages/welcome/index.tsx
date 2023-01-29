@@ -20,7 +20,7 @@ import iVscode from './icon/vscode.png'
 import iVue from './icon/vue.png'
 import iXcode from './icon/xcode.png'
 
-
+import iGrough from './growth.png'
 
 let idx = 0
 function changeItem(dom:any){
@@ -101,7 +101,7 @@ const Welcome = ()=>{
           <div><span className="cycle" style={{backgroundColor:'rgb(53,227,226)'}}>&nbsp;</span> BUPT，北京邮电大学，计算机 </div>
           <div><span className="cycle" style={{backgroundImage:'linear-gradient(120deg, rgb(53,136,252) 0%, rgb(42,175,184) 100%)'}}>&nbsp;</span> B.D.(Bytedance)，字节跳动，测试开发/前端实习 </div>
       </div>
-      <div className="growth" style={{backgroundImage:`url(${getFullPath('backgrounds/growth.png')})`}}></div>
+      <div className="growth" style={{backgroundImage:`url(${iGrough})`}}></div>
     </div>
   )
   const motto = (
@@ -188,12 +188,12 @@ const Welcome = ()=>{
       <div className="oneRow">
         <AdaptiveContainer width="36%" height="200px" child={motto}></AdaptiveContainer>
         <div className="divider" ></div>
-        <AdaptiveContainer width="58%" height="200px" child={leader} bgi={getFullPath('backgrounds/che.jpg')}></AdaptiveContainer>
+        <AdaptiveContainer width="58%" height="200px" child={leader} bgi="https://pic.imgdb.cn/item/63d5c4f5face21e9ef9806b4.jpg"></AdaptiveContainer>
       </div>
       <div className="oneRow">
-        <AdaptiveContainer width="58%" height="300px" child={lol} bgi={getFullPath('backgrounds/moon.jpeg')}></AdaptiveContainer>
+        <AdaptiveContainer width="58%" height="300px" child={lol} bgi="https://pic.imgdb.cn/item/63d5c4f9face21e9ef980cc0.jpg"></AdaptiveContainer>
         <div className="divider" ></div>
-        <AdaptiveContainer width="37%" height="300px" child={like} bgi={getFullPath('backgrounds/bingbing.png')}></AdaptiveContainer>
+        <AdaptiveContainer width="37%" height="300px" child={like} bgi="https://pic.imgdb.cn/item/63d5c4f5face21e9ef980677.png"></AdaptiveContainer>
       </div>
       <div className="oneRow">
         <AdaptiveContainer width="97%" height="200px" child={why}></AdaptiveContainer>
