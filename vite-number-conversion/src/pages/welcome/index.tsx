@@ -142,7 +142,7 @@ const Welcome = ()=>{
     <div>
       <div className="font12">初心</div>
       <br/><br/>
-      <div className="font16" style={{height:'280px'}}>
+      <div className="font16" style={{height:'auto'}}>
       分享是最好的学习。
       <br/><br/>
       22年末遇到了周岭先生的《认知驱动》，书中关于“
@@ -211,7 +211,7 @@ const Welcome = ()=>{
         <AdaptiveContainer width="37%" height="300px" child={like} bgi="https://pic.imgdb.cn/item/63d5c4f5face21e9ef980677.png"></AdaptiveContainer>
       </div>
       <div className="oneRow">
-        <AdaptiveContainer width="97%" height="400px" child={why}></AdaptiveContainer>
+        <AdaptiveContainer width="97%" height="auto" child={why}></AdaptiveContainer>
       </div>
     </div>
 
