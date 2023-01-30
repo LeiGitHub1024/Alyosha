@@ -22,6 +22,8 @@ import iXcode from './icon/xcode.png'
 
 import iGrough from './growth.png'
 
+import {Ubingbing,UChe1,UMoonGirl} from '../../ImagePaths'
+
 let idx = 0
 function changeItem(dom:any){
   let nodeList = dom?.children ||[]
@@ -203,12 +205,12 @@ const Welcome = ()=>{
       <div className="oneRow">
         <AdaptiveContainer width="36%" height="200px" child={motto}></AdaptiveContainer>
         <div className="divider" ></div>
-        <AdaptiveContainer width="58%" height="200px" child={leader} bgi="https://pic.imgdb.cn/item/63d5c4f5face21e9ef9806b4.jpg"></AdaptiveContainer>
+        <AdaptiveContainer width="58%" height="200px" child={leader} bgi={UChe1}></AdaptiveContainer>
       </div>
       <div className="oneRow">
-        <AdaptiveContainer width="58%" height="300px" child={lol} bgi="https://pic.imgdb.cn/item/63d5c4f9face21e9ef980cc0.jpg"></AdaptiveContainer>
+        <AdaptiveContainer width="58%" height="300px" child={lol} bgi={UMoonGirl}></AdaptiveContainer>
         <div className="divider" ></div>
-        <AdaptiveContainer width="37%" height="300px" child={like} bgi="https://pic.imgdb.cn/item/63d5c4f5face21e9ef980677.png"></AdaptiveContainer>
+        <AdaptiveContainer width="37%" height="300px" child={like} bgi={Ubingbing}></AdaptiveContainer>
       </div>
       <div className="oneRow">
         <AdaptiveContainer width="97%" height="auto" child={why}></AdaptiveContainer>
