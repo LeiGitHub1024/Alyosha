@@ -136,7 +136,7 @@ const Welcome = ()=>{
   const like = (
     <div id="bingbing">
       <div className="font12">喜欢</div>
-      <div className="font36" style={{height:'180px'}}>王冰冰</div>
+        <div className="font36" style={{height:'180px'}}><a href="https://mywbb.mysxl.cn/" target='_blank' >王冰冰</a></div>
       <div className="font16">我的心是冰冰的</div>
     </div>
   )
