@@ -21,7 +21,7 @@ function App() {
             <Route path="/superman" element={<SuperMan />} />
           </Routes>
       </div>
-      <AxiosExample></AxiosExample>
+      {/* <AxiosExample></AxiosExample> */}
       <Footer></Footer>
     </div>
   )
