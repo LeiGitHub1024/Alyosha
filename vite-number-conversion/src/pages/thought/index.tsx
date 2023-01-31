@@ -11,7 +11,7 @@ const Thought = ()=>{
     <ArticleCard title="前端性能指标" introduction="介绍WebVitals的六个核心指标"  imgPath={UWebvitals} href={"https://bytedance.feishu.cn/docx/doxcnVatIi1QFvKbIhHBFtbWnug"} ></ArticleCard>,
     <ArticleCard title="优雅获取dom坐标" introduction="使用IntersectionObserver" imgPath={URect} href="https://bytedance.feishu.cn/docx/doxcniravL9G0VoNcjBoXnc6bZf" ></ArticleCard>,
     <ArticleCard title="HTML渲染原理" introduction="浏览器解析HTML的原理"  imgPath={UHtml} href="https://leixiaojun.feishu.cn/docx/Lnehd7bA8oUONAxL9Bgcn5n4n6f" ></ArticleCard>,
-    <ArticleCard title="原型与原型链" introduction="形象地解释原型与原型链"  imgPath={UAniya} href="https://leixiaojun.feishu.cn/docx/K29QdwLN7oMICGxCCMTcnGENnLc"></ArticleCard>,
+    <ArticleCard title="原型与原型链" introduction="形象地解释原型与原型链"  imgPath={UAniya} href="https://juejin.cn/post/7194782845661872186"></ArticleCard>,
   ]
 
   const ideas = [

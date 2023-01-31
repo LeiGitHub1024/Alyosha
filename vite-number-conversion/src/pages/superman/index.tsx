@@ -12,6 +12,7 @@ import icolorAvatar from './icon/colorAvatar.png'
 import iconvert from './icon/convert.png'
 import iFavioli from './icon/favioli.png'
 import iGitBranching from './icon/gitBranching.png'
+import iMlu from './icon/mlu.png'
 import iHeo from './icon/heo.png'
 import iJian from './icon/jian.ico'
 import iLolDog from './icon/lolDog.png'
@@ -28,7 +29,7 @@ const SuperMan = ()=>{
   // 个人技术播客
   const personBlogs = [
     <LinkCard shape='circle' title="阮一峰" desc="阮一峰的网络日志" icon={iRuan} link="https://www.ruanyifeng.com/blog/"></LinkCard>,
-    <LinkCard shape='circle' title="张洪Heo" desc="设计师、产品经理、独立开发者、博主" icon={iHeo} link="https://blog.zhheo.com/about/"></LinkCard>,
+    <LinkCard shape='circle' title="张洪Heo" desc="设计师、产品经理、独立开发者、博主" icon={iHeo} link="https://blog.zhheo.com/"></LinkCard>,
     <LinkCard shape='circle' title="山月" desc="前端工程师"  link=" https://q.shanyue.tech/"></LinkCard>,
   ]
 
@@ -55,7 +56,9 @@ const utils = [
 ]
 const study = [
   <LinkCard  title="从零开始的神经网络" desc="深度学习入门" icon={iNeural} link="https://aegeorge42.github.io/"></LinkCard>,
+  <LinkCard  title="MLU-EXPLAIN" desc="深度学习概念可视化理解" icon={iMlu} link="https://mlu-explain.github.io/"></LinkCard>,
   <LinkCard  title="GithBranching" desc="Github入门" icon={iGitBranching} link="https://learngitbranching.js.org/?locale=zh_CN"></LinkCard>,
+
 ]
 
 const games = [

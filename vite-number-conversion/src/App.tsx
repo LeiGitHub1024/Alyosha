@@ -8,6 +8,7 @@ import Project from './pages/project/inedex';
 import SuperMan from './pages/superman';
 import Thought from './pages/thought';
 import Footer from './pages/footer'
+import AxiosExample from './uitls/Axios'
 function App() {
   return (
     <div>
@@ -20,6 +21,7 @@ function App() {
             <Route path="/superman" element={<SuperMan />} />
           </Routes>
       </div>
+      <AxiosExample></AxiosExample>
       <Footer></Footer>
     </div>
   )
