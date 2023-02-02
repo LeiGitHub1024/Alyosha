@@ -23,6 +23,7 @@ import iRed2 from './icon/red2.jpg'
 import iRuan from './icon/ruan.ico'
 import iToonme from './icon/toonme.png'
 import iVenge from './icon/venge.png'
+import iShipian from './icon/shipian.png'
 
 
 const SuperMan = ()=>{
@@ -35,6 +36,7 @@ const SuperMan = ()=>{
 
   const magicSites = [    
     <LinkCard  title="ChatGPT" desc="最好用的自然语言生成模型" icon={iChatgpt} link="https://chat.openai.com/chat"></LinkCard>,
+    <LinkCard  title="诗篇" desc="给图片配诗" icon={iShipian} link="https://shipian.zsio.net"></LinkCard>,
     <LinkCard  title="Animated Drawings" desc="让2D简笔画动起来" icon={iAd} link="https://sketch.metademolab.com/canvas"></LinkCard>,
     <LinkCard  title="TOONME" desc="图像卡通化" icon={iToonme} link="https://toonme.com/result"></LinkCard>,
     <LinkCard  title="MatrixDigitalRain" icon={icodeRain} desc="黑客帝国代码雨" link="https://codepen.io/yuanchuan/pen/YoqWeR"></LinkCard>,
