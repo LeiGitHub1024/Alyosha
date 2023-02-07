@@ -51,8 +51,8 @@ const AxiosExample = () => {
           setData('err')
         }
       }
-      testXHR();
-      // testFetch();
+      // testXHR();
+      testFetch();
 
 
   }, []);

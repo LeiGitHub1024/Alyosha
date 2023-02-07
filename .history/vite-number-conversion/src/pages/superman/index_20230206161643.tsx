@@ -46,7 +46,7 @@ const SuperMan = ()=>{
     <LinkCard  title="彩云小梦" icon={iCaiyun} desc="AI讲故事" link="https://if.caiyunai.com/dashboard/novels"></LinkCard>,
     
     
-    <LinkCard  title="Poke-hole" icon={iGiza} desc="神奇宝贝卡片，CSS炫技！" link="https://poke-holo.simey.me/"></LinkCard>,
+    <LinkCard  title="Poke-hole" icon={iGiza} desc="CSS炫技！" link="https://poke-holo.simey.me/"></LinkCard>,
 
     <LinkCard  title="数字吉萨" icon={iGiza} desc="漫游金字塔" link="https://giza.mused.org/zh-hans/guided/335/da-jin-zi-ta-nei-bu"></LinkCard>,
 

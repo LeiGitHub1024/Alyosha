@@ -45,8 +45,6 @@ const SuperMan = ()=>{
     <LinkCard  title="Paper2GUI" desc="让每个人都简单方便的使用前沿人工智能技术" link="https://github.com/Baiyuetribe/paper2gui"></LinkCard>,
     <LinkCard  title="彩云小梦" icon={iCaiyun} desc="AI讲故事" link="https://if.caiyunai.com/dashboard/novels"></LinkCard>,
     
-    
-    <LinkCard  title="Poke-hole" icon={iGiza} desc="神奇宝贝卡片，CSS炫技！" link="https://poke-holo.simey.me/"></LinkCard>,
 
     <LinkCard  title="数字吉萨" icon={iGiza} desc="漫游金字塔" link="https://giza.mused.org/zh-hans/guided/335/da-jin-zi-ta-nei-bu"></LinkCard>,
 
@@ -64,7 +62,6 @@ const utils = [
   <LinkCard  title="BoardMix" desc="在线绘制好看的流程图"  icon={iBoardMix} link="https://boardmix.cn/app/my-space"></LinkCard>,
   <LinkCard  title="PageSpeedInsights" desc="网站性能评测" icon={iPageSpedd} link="https://pagespeed.web.dev/"></LinkCard>,
   <LinkCard  title="Hhappyhues" desc="配色网站"  link="https://www.happyhues.co/palettes/13"></LinkCard>,
-
 
 ]
 const study = [
