@@ -12,6 +12,7 @@ const Ubingbing = 'https://s1.ax1x.com/2023/01/30/pSdWF7F.png',
     UAniya = 'https://s1.ax1x.com/2023/01/30/pSdWjHO.png',
     UHtml = 'https://s1.ax1x.com/2023/01/30/pSdWzUe.png',
     URect = 'https://s1.ax1x.com/2023/01/30/pSdfC8A.png',
-    UWebvitals = 'https://s1.ax1x.com/2023/01/30/pSdfivt.png'
+    UWebvitals = 'https://s1.ax1x.com/2023/01/30/pSdfivt.png',
+    UChatGPT = 'https://s1.ax1x.com/2023/02/21/pSjCdte.jpg'
 
-export {Ubingbing, UChe1,UChe2,UMoonGirl,UCamera,UFish,UGreen,UTruth,UAniya,UHtml,URect,UWebvitals};
+export {Ubingbing, UChe1,UChe2,UMoonGirl,UCamera,UFish,UGreen,UTruth,UAniya,UHtml,URect,UWebvitals,UChatGPT};

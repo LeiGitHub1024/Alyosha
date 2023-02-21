@@ -41,7 +41,7 @@ const AxiosExample = () => {
       async function testFetch(){
         try {
           debugger;//usr code1
-          const response = await fetch('http://localhost:3010/api');
+          const response = await fetch('http://localhost:3000/api');
           console.log(response.headers,response)
           const data = await response.json();
           debugger;//usr code2
