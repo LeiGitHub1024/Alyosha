@@ -22,7 +22,7 @@ import iXcode from './icon/xcode.png'
 
 import iGrough from './growth.png'
 
-import {Ubingbing,UChe1,UMoonGirl} from '../../ImagePaths'
+import Images from '../../ImagePaths'
 
 let idx = 0
 function changeItem(dom:any){
@@ -205,12 +205,12 @@ const Welcome = ()=>{
       <div className="oneRow">
         <AdaptiveContainer width="36%" height="200px" child={motto}></AdaptiveContainer>
         <div className="divider" ></div>
-        <AdaptiveContainer width="58%" height="200px" child={leader} bgi={UChe1}></AdaptiveContainer>
+        <AdaptiveContainer width="58%" height="200px" child={leader} bgi={Images.UChe1}></AdaptiveContainer>
       </div>
       <div className="oneRow">
-        <AdaptiveContainer width="58%" height="300px" child={lol} bgi={UMoonGirl}></AdaptiveContainer>
+        <AdaptiveContainer width="58%" height="300px" child={lol} bgi={Images.UMoonGirl}></AdaptiveContainer>
         <div className="divider" ></div>
-        <AdaptiveContainer width="37%" height="300px" child={like} bgi={Ubingbing}></AdaptiveContainer>
+        <AdaptiveContainer width="37%" height="300px" child={like} bgi={Images.Ubingbing}></AdaptiveContainer>
       </div>
       <div className="oneRow">
         <AdaptiveContainer width="97%" height="auto" child={why}></AdaptiveContainer>
