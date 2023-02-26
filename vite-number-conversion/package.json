@@ -10,6 +10,7 @@
     },
     "dependencies": {
         "@arco-design/web-react": "^2.44.0",
+        "@song940/chatgpt-api": "^0.0.2",
         "axios": "^1.2.6",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
