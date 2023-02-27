@@ -108,7 +108,7 @@ const Welcome = ()=>{
   )
   const motto = (
     <div>
-      <div className="font36">命运的礼物 <br></br> 都有价格</div>
+      <div className="font36 fire">风能吹灭蜡烛 <br></br> <div>也能让火越烧越旺</div> </div>
     </div>
   )
   const leader = (
