@@ -19,10 +19,9 @@ import iTs from './icon/ts.png'
 import iVscode from './icon/vscode.png'
 import iVue from './icon/vue.png'
 import iXcode from './icon/xcode.png'
-
 import iGrough from './growth.png'
-
 import Images from '../../ImagePaths'
+import TestPage from "../../commonComponents/TestPage";
 
 let idx = 0
 function changeItem(dom:any){
@@ -216,8 +215,11 @@ const Welcome = ()=>{
         <AdaptiveContainer width="97%" height="auto" child={why}></AdaptiveContainer>
       </div>
     </div>
-
-
+    {
+      process.env.NODE_ENV === 'development' &&(
+        <TestPage></TestPage>
+      )
+    }
 
   </>)
 }
