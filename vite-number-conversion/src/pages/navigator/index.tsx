@@ -15,8 +15,6 @@ const pathTitleMap = {
 }
 type TypePathTitleMap = '/'|'/project'|'/thought'|'/superman'
 
-
-
 export const Navigator = ()=>{
   const [MenuTitle, setMenuTitle] = useState<string>('Home');
   const [popupVisibleOne, setPopupVisibleOne] = useState(false);

@@ -2,7 +2,10 @@
 #topnavigator{
   height: 70px;
   width: 100vw;
-  background-color: var(--color-bg-2);
+  -webkit-backdrop-filter: blur(12px); //毛玻璃
+	backdrop-filter: blur(12px) saturate(1.25);; //毛玻璃
+  // background-color: var(--color-bg-2);
+  background-color: rgba(255,255,255,0.4);
   display: flex;
   justify-content: space-between;
   align-items: center;
