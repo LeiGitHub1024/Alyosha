@@ -7,7 +7,6 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-PTVJKM2M7Y');
     </script>
     <meta charset="UTF-8" />
@@ -22,7 +21,7 @@
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/service-worker.js')
+          navigator.serviceWorker.register('/sw.js')
             .then(registration => {
               console.log('Service worker registered:', registration);
             })
