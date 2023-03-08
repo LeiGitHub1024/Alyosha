@@ -24,44 +24,51 @@ import Images from '../../ImagePaths'
 import TestPage from "../../commonComponents/TestPage";
 
 let idx = 0
-function changeItem(dom:any){
-  let nodeList = dom?.children ||[]
-  nodeList[idx].setAttribute('class','up')
-  nodeList[(idx+1)%3].setAttribute('class','show')
-  nodeList[(idx+2)%3].setAttribute('class','hidden')
-}
+// function changeItem(dom:any){
+//   let nodeList = dom?.children ||[]
+//   nodeList[idx].setAttribute('class','up')
+//   nodeList[(idx+1)%3].setAttribute('class','show')
+//   nodeList[(idx+2)%3].setAttribute('class','hidden')
+// }
 const Welcome = ()=>{
 
   const welcome = (
     <div>
       <div className="font16">你好，欢迎光临阿廖沙的小屋</div>
-      <div className="font36"> 我是 阿廖沙</div>
-      <div className="font16">是一名 前端工程师、辩证唯物主义者</div>
+      <div className="font36">我是 阿廖沙</div>
+      <div className="font16">在这里记录一些小玩意和学习心得，希望对你有帮助</div>
     </div>
   )
-  const dream = (
-    <div>
-      <div className="font36">
-        <div className="outerContainer"> 
-          <span>不</span> &nbsp; 
-          <div className="midContainer" >
-              <span className="up">寻找爱情</span>
-              <span className="show">渴望成功</span>
-              <span>追求成长</span>
-          </div>
-        </div>
-        <div className="outerContainer"> 
-          <span>只是去</span> &nbsp; 
-          <div className='midContainer' style={{width:'60px'}}>
-              <span className="up">爱</span>
-              <span className="show" >做</span>
-              <span >修</span>
-          </div>
-        </div>
-    </div>
-    </div>
-  )
+  // const dream = (
+  //   <div>
+  //     <div className="font36">
+  //       <div className="outerContainer"> 
+  //         <span>不</span> &nbsp; 
+  //         <div className="midContainer" >
+  //             <span className="up">寻找爱情</span>
+  //             <span className="show">渴望成功</span>
+  //             <span>追求成长</span>
+  //         </div>
+  //       </div>
+  //       <div className="outerContainer"> 
+  //         <span>只是去</span> &nbsp; 
+  //         <div className='midContainer' style={{width:'60px'}}>
+  //             <span className="up">爱</span>
+  //             <span className="show" >做</span>
+  //             <span >修</span>
+  //         </div>
+  //       </div>
+  //   </div>
+  //   </div>
+  // )
+  const information = (<>
+    <div className="font16">掘金： <a href="https://juejin.cn/user/902063057797438">努力学前端的素素</a></div>
+    <br></br>
+    <div className="font16">微信公众号： 香芋小丸子</div>
+    <br></br>
+    <div className="font16">微信： alyosha_wechat</div>
 
+  </>)
   const skills = (
     <div>
       <div className="font12">技能</div>
@@ -177,8 +184,8 @@ const Welcome = ()=>{
   useEffect(()=>{
     (function x(){
       setTimeout(()=>{
-        changeItem(document.querySelectorAll('.midContainer')[0])
-        changeItem(document.querySelectorAll('.midContainer')[1])
+        // changeItem(document.querySelectorAll('.midContainer')[0])
+        // changeItem(document.querySelectorAll('.midContainer')[1])
         idx = (idx+1)%3
 
         x()
@@ -194,7 +201,9 @@ const Welcome = ()=>{
       <div className="oneRow">
         <AdaptiveContainer width="58%" height="180px" child={welcome}></AdaptiveContainer>
         <div className="divider" ></div>
-        <AdaptiveContainer width="36%" height="180px" child={dream}></AdaptiveContainer>
+        {/* <AdaptiveContainer width="36%" height="180px" child={dream}></AdaptiveContainer> */}
+        <AdaptiveContainer width="36%" height="180px" child={information}></AdaptiveContainer>
+
       </div>
       <div className="oneRow" >
         <AdaptiveContainer width="47%" height="400px" child={skills} ></AdaptiveContainer>
@@ -217,7 +226,12 @@ const Welcome = ()=>{
     </div>
     {
       process.env.NODE_ENV === 'development' &&(
+        <>
+        下面的测试页面，仅本地可见
+        <br/>
         <TestPage></TestPage>
+        </>
+        
       )
     }
 

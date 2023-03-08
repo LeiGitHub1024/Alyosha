@@ -8,7 +8,7 @@ import Project from './pages/project/inedex';
 import SuperMan from './pages/superman';
 import Thought from './pages/thought';
 import Footer from './pages/footer'
-import AxiosExample from './uitls/Axios'
+import Article from "./pages/article";
 function App() {
   return (
     <div>
@@ -17,11 +17,11 @@ function App() {
           <Routes>
             <Route path="/" element={<Welcome />} />
             <Route path="/project" element={<Project />} />
-            <Route path="/thought" element={<Thought />} />
+            <Route path="/thought" element={<Thought />} />  
             <Route path="/superman" element={<SuperMan />} />
+            <Route path="/article" element={<Article />} />
           </Routes>
       </div>
-      {/* <AxiosExample></AxiosExample> */}
       <Footer></Footer>
     </div>
   )

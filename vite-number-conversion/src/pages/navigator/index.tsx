@@ -75,7 +75,7 @@ export const Navigator = ()=>{
       >
       <Link to='/' ><Menu.Item key='1'>🏡主页</Menu.Item></Link>
       <Link to='/project' > <Menu.Item key='2'>🔨项目</Menu.Item></Link>
-      <Link to='/thought' ><Menu.Item key='3'>💡想法</Menu.Item></Link>
+      {/* <Link to='/thought' ><Menu.Item key='3'>💡想法</Menu.Item></Link> */}
       <Link to='/superman'><Menu.Item key='4'>⛰他山之石</Menu.Item></Link>
     </Menu>
     )
@@ -98,7 +98,7 @@ export const Navigator = ()=>{
       <div id='horizon-menu'>
         <Link to='/' >主页</Link>
         <Link to='/project' >项目</Link>
-        <Link to='/thought' >想法</Link>
+        {/* <Link to='/thought' >想法</Link> */}
         <Link to='/superman'>他山之石</Link>
       </div>
       <div className='menu-title hidden'>{MenuTitle}</div>
