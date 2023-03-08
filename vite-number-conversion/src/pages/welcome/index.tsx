@@ -23,7 +23,7 @@ import iGrough from './growth.png'
 import Images from '../../ImagePaths'
 import TestPage from "../../commonComponents/TestPage";
 
-let idx = 0
+// let idx = 0
 // function changeItem(dom:any){
 //   let nodeList = dom?.children ||[]
 //   nodeList[idx].setAttribute('class','up')
@@ -107,7 +107,7 @@ const Welcome = ()=>{
       <div id="example">
           <div><span className="cycle" style={{backgroundColor:'rgb(256,96,31)'}}> &nbsp;</span> DLUT，大连理工大学，数字媒体技术</div>
           <div><span className="cycle" style={{backgroundColor:'rgb(53,227,226)'}}>&nbsp;</span> BUPT，北京邮电大学，计算机 </div>
-          <div><span className="cycle" style={{backgroundImage:'linear-gradient(120deg, rgb(53,136,252) 0%, rgb(42,175,184) 100%)'}}>&nbsp;</span> B.D.(Bytedance)，字节跳动，测试开发/前端实习 </div>
+          <div><span className="cycle" style={{backgroundImage:'linear-gradient(120deg, rgb(53,136,252) 0%, rgb(42,175,184) 100%)'}}>&nbsp;</span> B.D.(Bytedance)，字节跳动，前端实习 </div>
       </div>
       <div className="growth" style={{backgroundImage:`url(${iGrough})`}}></div>
     </div>
@@ -181,17 +181,17 @@ const Welcome = ()=>{
   useEffect(()=>{copyLastFour('#child1');copyLastFour('#child2');}, [])
 
 
-  useEffect(()=>{
-    (function x(){
-      setTimeout(()=>{
-        // changeItem(document.querySelectorAll('.midContainer')[0])
-        // changeItem(document.querySelectorAll('.midContainer')[1])
-        idx = (idx+1)%3
+  // useEffect(()=>{
+  //   (function x(){
+  //     setTimeout(()=>{
+  //       // changeItem(document.querySelectorAll('.midContainer')[0])
+  //       // changeItem(document.querySelectorAll('.midContainer')[1])
+  //       // idx = (idx+1)%3
 
-        x()
-      },2000)
-    })()
-  },[])
+  //       x()
+  //     },2000)
+  //   })()
+  // },[])
 
   return (<>
     <div id="alyosha">
@@ -203,7 +203,6 @@ const Welcome = ()=>{
         <div className="divider" ></div>
         {/* <AdaptiveContainer width="36%" height="180px" child={dream}></AdaptiveContainer> */}
         <AdaptiveContainer width="36%" height="180px" child={information}></AdaptiveContainer>
-
       </div>
       <div className="oneRow" >
         <AdaptiveContainer width="47%" height="400px" child={skills} ></AdaptiveContainer>
