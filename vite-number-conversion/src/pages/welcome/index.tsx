@@ -36,7 +36,7 @@ const Welcome = ()=>{
     <div>
       <div className="font16">你好，欢迎光临阿廖沙的小屋</div>
       <div className="font36">我是 阿廖沙</div>
-      <div className="font16">在这里记录一些小玩意和学习心得，希望对你有帮助</div>
+      <div className="font16">在这里记录一些小工具和学习心得，希望对你有帮助</div>
     </div>
   )
   // const dream = (
@@ -62,11 +62,11 @@ const Welcome = ()=>{
   //   </div>
   // )
   const information = (<>
-    <div className="font16">掘金： <a href="https://juejin.cn/user/902063057797438">努力学前端的素素</a></div>
+    <div className="font16">掘金： <a target="_blank" href="https://juejin.cn/user/902063057797438">努力学前端的素素</a></div>
     <br></br>
-    <div className="font16">微信公众号： 香芋小丸子</div>
+    <div className="font16">飞书文档： <a target="_blank" href="https://leixiaojun.feishu.cn/wiki/wikcnkva3TvOd8VKzvrtIHbZMxg">大家的前端知识图鉴</a></div>
     <br></br>
-    <div className="font16">微信： alyosha_wechat</div>
+    <div className="font16">微信： <a target="_blank" href="https://s1.ax1x.com/2023/03/13/ppMvzIx.jpg">alyosha_wechat</a></div>
 
   </>)
   const skills = (
