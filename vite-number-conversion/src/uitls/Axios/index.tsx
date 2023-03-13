@@ -11,7 +11,6 @@ const AxiosExample = () => {
         debugger;
         // xhr.open("GET", "http://localhost:3000/apiss", true);
         xhr.open("Post", "http://localhost:3000/api", true);
-
         // xhr.onload = function (a) {
         //   console.log(a)
         //   if (xhr.status === 200) {

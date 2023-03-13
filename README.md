@@ -4,13 +4,15 @@
 
 
 ## 开发日志
-### 2023.3.3
-- todo
+### todo
   - 整体性能优化。
   - 上传图像流程优化，图像压缩？用不用图床？
   - PWA系列问题：PWA的背景色目前不会跟着黑暗模式变换而变换。PWA缓存问题。 [PWA指南](https://web.dev/i18n/zh/app-like-pwas/)
   - 他山之石页面一些icon大小有问题。
   - 要不要新增一个博客系统？yhj:你要是想自己写的话，Vue 就推荐用 https://content.nuxtjs.org，React 的就用 https://nextra.site/。https://github.com/tangly1024/NotionNext
+
+### 2023.3.13 文章页构建
+- 如何智能加载一个文章列表，每次只管写md文件，不用改其它代码? 详见文章：【撰写中】
 
 ### 2023.2.2 发现
 - 发现一个好玩的现象，图像>8k的会被当成图片，<8k的直接编译成string了。

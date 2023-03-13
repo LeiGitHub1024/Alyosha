@@ -1,0 +1,36 @@
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .catalog{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    font-size: 20px;
+
+    .year{
+      font-size: 26px;
+      margin:20px 0 ;
+      padding: 0;
+    }
+    .wrapper{
+      overflow: hidden;
+      margin: 10px 0;
+      white-space: nowrap;
+      .date{
+        color: var(--color-text-4);
+      }
+      .name{
+        color:var(--color-text-1);
+        margin-left: 10px;
+        &:hover{
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  
+}

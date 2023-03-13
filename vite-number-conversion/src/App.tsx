@@ -8,7 +8,8 @@ import Project from './pages/project/inedex';
 import SuperMan from './pages/superman';
 import Thought from './pages/thought';
 import Footer from './pages/footer'
-import Article from "./pages/article";
+import Catalog from './pages/article/catalog'
+import Article from "./pages/article/article";
 function App() {
   return (
     <div>
@@ -19,7 +20,9 @@ function App() {
             <Route path="/project" element={<Project />} />
             <Route path="/thought" element={<Thought />} />  
             <Route path="/superman" element={<SuperMan />} />
-            <Route path="/article" element={<Article />} />
+            <Route path="/article" element={<Catalog />} />
+            <Route path="/article/:id" element={<Article />} />
+
           </Routes>
       </div>
       <Footer></Footer>

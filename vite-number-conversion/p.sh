@@ -1,4 +1,7 @@
 # npx tiny 暂时只能手动压缩
+
+python ../articles/save_file_names.py
+
 npm run build
 cd ..
 git add .
