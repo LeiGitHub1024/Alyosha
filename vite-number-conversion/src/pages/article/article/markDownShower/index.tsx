@@ -43,14 +43,23 @@ const MarkDownShower = (props: { filePath: string }) => {
                 {children}
               </code>
             )
-          }
+          },
+          blockquote: ({ children }) => (
+            <blockquote
+              style={{
+                backgroundColor: "var(--color-bg-2)",
+                borderLeft: "10px solid rgba(150,150,150,.5)",
+                color:"var(--color-text-2)",
+                margin: "0.5em 0",
+                padding: "1px 10px",
+              }}
+            >
+              {children}
+            </blockquote>
+          ),
+          
         }}
-        // renderers={{ code: CodeBlock }}
-        // onNode={node => {
-        //   if (node.type === 'code') {
-        //     hljs.highlightBlock(node);
-        //   }
-        // }}
+      
       ></ReactMarkdown>
     </>
   );
