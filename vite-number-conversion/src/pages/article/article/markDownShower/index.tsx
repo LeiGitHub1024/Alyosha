@@ -49,15 +49,16 @@ const MarkDownShower = (props: { filePath: string }) => {
               style={{
                 backgroundColor: "var(--color-bg-2)",
                 borderLeft: "10px solid rgba(150,150,150,.5)",
-                color:"var(--color-text-2)",
-                margin: "0.5em 0",
-                padding: "1px 10px",
+                color:"var(--color-text-3)",
+                margin: "0",
+                padding: "0px 10px",
+                whiteSpace:"pre-wrap",
               }}
             >
               {children}
             </blockquote>
           ),
-          
+
         }}
       
       ></ReactMarkdown>
