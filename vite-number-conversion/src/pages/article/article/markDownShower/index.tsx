@@ -5,7 +5,7 @@ import ReactMarkdown from "react-markdown";
 import hljs from "highlight.js";
 import 'highlight.js/styles/github.css';
 import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
-import {dark} from 'react-syntax-highlighter/dist/esm/styles/prism'
+import {vscDarkPlus as dark} from 'react-syntax-highlighter/dist/esm/styles/prism'
 
 
 const MarkDownShower = (props: { filePath: string }) => {
