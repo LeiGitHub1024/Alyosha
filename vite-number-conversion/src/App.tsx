@@ -10,6 +10,7 @@ import Thought from './pages/thought';
 import Footer from './pages/footer'
 import Catalog from './pages/article/catalog'
 import Article from "./pages/article/article";
+
 function App() {
   return (
     <div>
@@ -22,7 +23,6 @@ function App() {
             <Route path="/superman" element={<SuperMan />} />
             <Route path="/article" element={<Catalog />} />
             <Route path="/article/:id" element={<Article />} />
-
           </Routes>
       </div>
       <Footer></Footer>
