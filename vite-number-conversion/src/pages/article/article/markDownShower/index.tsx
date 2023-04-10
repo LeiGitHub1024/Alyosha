@@ -10,7 +10,7 @@ import {vscDarkPlus as dark} from 'react-syntax-highlighter/dist/esm/styles/pris
 
 const MarkDownShower = (props: { filePath: string }) => {
   const { filePath } = props;
-  const [markdown, setMarkdown] = useState("123");
+  const [markdown, setMarkdown] = useState("加载中......");
   useEffect(() => {
     process.env.NODE_ENV === "development"
       ? changeArticle("/src/pages/article/article/markDownShower/test.md")
@@ -64,3 +64,5 @@ const MarkDownShower = (props: { filePath: string }) => {
   );
 };
 export default MarkDownShower;
+
+
