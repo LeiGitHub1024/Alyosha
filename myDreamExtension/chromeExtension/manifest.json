@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "URL Redirector",
+  "version": "1.0",
+  "description": "Redirects specific URLs to a static HTML page",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": ["service_worker.js"],
+    "persistent": true
+  },
+  "web_accessible_resources": [
+    "static.html"
+  ]
+}
